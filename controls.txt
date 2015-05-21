@@ -43,7 +43,7 @@ Right				 : KEY_RIGHT
 PLAYER 2
 ========
 CONTROLLER:         MOUSE
-Jump                 : MOD_MIDDLE
+Jump                 : MOS_MIDDLE
 Left Hand Use		 : MOS_LEFT
 Left Hand Get/Drop	 : MOS_RIGHT_AND_MIDDLE
 Left Hand Inventory	 : KEY_DELETE

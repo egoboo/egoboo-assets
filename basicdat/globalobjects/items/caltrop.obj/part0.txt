@@ -103,5 +103,5 @@ Life drain on hit ( 0 to 50 )				: 0
 
 
 // Expansions
-:[ARMO] 1	//Armor piercing ( base defense for target = 0 )
-:[BLOC] 1	//Cannot be blocked
+:[ARMO] 1 // Armor piercing ( base defense for target = 0 )
+:[BLOC] 1 // Cannot be blocked

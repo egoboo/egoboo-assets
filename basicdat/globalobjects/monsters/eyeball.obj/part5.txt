@@ -103,5 +103,5 @@ Life drain on hit ( 0 to 50 )				: 0
 
 
 // Expansions
-:[PUSH]		0  // Don't allow it to knock the characters around
-:[BLOC]		1  // Can't be blocked
+:[PUSH] 0 // Don't allow it to knock the characters around
+:[BLOC] 1 // Can't be blocked

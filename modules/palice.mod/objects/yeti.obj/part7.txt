@@ -101,5 +101,5 @@ Mana drain on hit ( 0 to 50 )				: 0
 Life drain on hit ( 0 to 50 )				: 0
 
 //Expansions
-:[BLOC] 0			//Dont be blocked
-:[WEND] 1			//Wall ends
+:[BLOC] 0 // Dont be blocked
+:[WEND] 1 // Wall ends

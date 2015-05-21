@@ -102,8 +102,8 @@ Life drain on hit ( 0 to 50 )				: 0
 
 
 // Expansions
-:[ARMO] 1	      //Armor piercing
-:[BLOC] 1	      //Can't be blocked
-:[TIME] 1	      //Doesn't set invulnerability time on collision
-:[WSND] 1       //Sound when wall bounce
-:[GRAV] 1       //Not affected by gravity
+:[ARMO] 1 // Armor piercing
+:[BLOC] 1 // Can't be blocked
+:[TIME] 1 // Doesn't set invulnerability time on collision
+:[WSND] 1 // Sound when wall bounce
+:[GRAV] 1 // Not affected by gravity

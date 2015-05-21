@@ -101,7 +101,7 @@ Respawn character on hit ( TRUE or FALSE )		: FALSE
 Mana drain on hit ( 0 to 50 )				: 0
 Life drain on hit ( 0 to 50 )				: 0
 
-:[BLOC] 1       //Can't be blocked
-:[PUSH] 0	//Does not push
-:[ARMO] 1	//Armor does not effect
+:[BLOC] 1 // Can't be blocked
+:[PUSH] 0 // Does not push
+:[ARMO] 1 // Armor does not effect
 

@@ -104,4 +104,4 @@ Life drain on hit ( 0 to 50 )				: 0
 
 
 // Expansions
-:[TURN] 0	Don't turn with the character to whom it is attached
+:[TURN] 0 // Don't turn with the character to whom it is attached

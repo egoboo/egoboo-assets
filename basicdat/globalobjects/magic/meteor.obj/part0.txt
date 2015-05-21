@@ -103,7 +103,7 @@ Life drain on hit ( 0 to 50 )				: 0
 
 
 // Expansions
-:[BLOC]	1 	   // Can't be blocked
-:[DLEV] 40         // Light gets bigger as meteor falls...
-:[DRAD] 90000      //
-:[IDAM] 1	   //Intelligence adds extra damage
+:[BLOC] 1 // Can't be blocked
+:[DLEV] 40 // Light gets bigger as meteor falls...
+:[DRAD] 90000 //
+:[IDAM] 1 //Intelligence adds extra damage

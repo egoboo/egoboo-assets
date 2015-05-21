@@ -103,5 +103,5 @@ Life drain on hit ( 0 to 50 )				: 0
 
 
 // Expansions
-:[BLOC] 1	// Can't be blocked
-:[TIME] 1	// Doesn't set invulnerability time on collision
+:[BLOC] 1 // Can't be blocked
+:[TIME] 1 // Doesn't set invulnerability time on collision

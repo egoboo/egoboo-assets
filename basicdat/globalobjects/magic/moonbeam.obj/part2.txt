@@ -101,11 +101,11 @@ Respawn character on hit ( TRUE or FALSE )		: FALSE
 Mana drain on hit ( 0 to 50 )				: 0
 Life drain on hit ( 0 to 50 )				: 0
 
-:[WDAM] 1   //Wisdom adds damage
-:[ARMO] 0   //Armor piercing
-:[BLOC] 0   //No blocking works
-:[WEND] 1   // 0 or 1, Particle will end if it hits a wall
-:[TIME] 0	// Don't set invincibility time on hit
+:[WDAM] 1 // Wisdom adds damage
+:[ARMO] 0 // Armor piercing
+:[BLOC] 0 // No blocking works
+:[WEND] 1 // 0 or 1, Particle will end if it hits a wall
+:[TIME] 0 // Don't set invincibility time on hit
 
-:[DLEV] 40         // Light gets bigger as star falls...
-:[DRAD] 90000      //
+:[DLEV] 40     // Light gets bigger as star falls...
+:[DRAD] 90000  //

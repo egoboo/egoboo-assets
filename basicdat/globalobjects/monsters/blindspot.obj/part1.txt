@@ -103,5 +103,5 @@ Life drain on hit ( 0 to 50 )				: 0
 
 
 // Expansions
-:[DLEV] 18		// Dyna light gets brighter ( less negative )
-:[DRAD] -10000		// Dyna light gets smaller ( less area )
+:[DLEV] 18      // Dyna light gets brighter ( less negative )
+:[DRAD] -10000  // Dyna light gets smaller ( less area )

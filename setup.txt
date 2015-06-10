@@ -1,6 +1,6 @@
 camera.control : "Auto"
 debug.SDL_Image.enable : "true"
-debug.developerMode.enable : "false"
+debug.developerMode.enable : "true"
 debug.grabMouse : "false"
 debug.hideMouse : "true"
 game.difficulty : "Normal"

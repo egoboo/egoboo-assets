@@ -26,6 +26,7 @@ IfSpawned
   // Map stuff
   ShowMap
   ShowYouAreHere
+  AddStat
 
   // Be bossy!
   BecomeLeader

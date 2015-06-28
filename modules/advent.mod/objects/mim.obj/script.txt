@@ -10,6 +10,7 @@ ShowBlipXY
 IfSpawned
   tmpargument = STATEFOLLOW
   SetState
+  AddStat
 
 //------------------------------------------------------------------------------
 IfKilled                // This reduces the height of the char

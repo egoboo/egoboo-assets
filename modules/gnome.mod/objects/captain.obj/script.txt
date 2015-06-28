@@ -3,6 +3,7 @@
 IfSpawned
   SetTargetToLeader
   SetOwnerToTarget
+  AddStat
 
   // Play the music
   tmpargument = 5

@@ -70,7 +70,7 @@ IfUsed
     IfXIsLessThanY
       tmpy = targetmanaflow            // Enough spell power?
       IfYIsMoreThanX
-        tmpy = rand % 400 + targetwis            // Enough wisdom? Need about 22
+        tmpy = rand % 400 + targetint            // Enough intellect? Need about 22
         tmpx = rand % 4700 + tmpargument
         IfYIsMoreThanX
           tmpargument = 6                // Mana cost

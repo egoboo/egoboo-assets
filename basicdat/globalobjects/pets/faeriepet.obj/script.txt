@@ -101,7 +101,7 @@ IfUsed
     // Mental Stats
     tmpdistance = targetexp
     tmpx = targetint > 8
-    tmpy = targetwis > 8
+    tmpy = targetint > 8
     tmpargument = 8
     SendMessageNear
 

@@ -92,7 +92,7 @@ IfUsed
       tmpx = 3
     tmpargument = 11 + tmpx
     tmpx = selfstr > 8
-    tmpy = selfwis > 8
+    tmpy = selfdex > 8
     SendMessageNear
 
     // Stats

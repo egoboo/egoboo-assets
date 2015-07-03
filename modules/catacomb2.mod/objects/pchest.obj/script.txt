@@ -130,10 +130,10 @@ IfBumped
               tmpargument = 2
               SetState
             Else
-              // Check wisdom until it is found
-              tmpx = targetwis
-              tmpy = rand & 4095 + 3584  // Need between 14 and 30 wisdom
-              tmpy = rand & 4095  // Need between 0 and 16 wisdom
+              // Check intellect until it is found
+              tmpx = targetint
+              tmpy = rand & 4095 + 3584  // Need between 14 and 30 intellect
+              tmpy = rand & 4095  // Need between 0 and 16 intellect
               IfXIsMoreThanY
                 // Character finds the false bottom
                 tmpargument = 1

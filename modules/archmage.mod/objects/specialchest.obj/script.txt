@@ -161,8 +161,8 @@ IfBumped
               IfTargetHasSkillID
                 tmpx = 65535              // Character easily finds the false bottom
               Else
-                tmpx = targetwis
-              tmpy = rand & 4095 + 3584   // Need between 14 and 30 wisdom
+                tmpx = targetint
+              tmpy = rand & 4095 + 3584   // Need between 14 and 30 intellect
               IfXIsMoreThanY
 
                 // Drop opposite of last

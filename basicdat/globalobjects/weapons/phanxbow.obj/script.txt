@@ -47,8 +47,8 @@ IfUsed
   IfTargetHasSkillID        // Poison skill?
     MakeNameKnown
   Else
-    tmpx = rand % 2816 + 2048     // Wisdom determines the chance, 19 is never and 8 is almost always
-    tmpy = rand % 512 + targetwis    // Randomness to decrease chance
+    tmpx = rand % 2816 + 2048     // Intellect determines the chance, 19 is never and 8 is almost always
+    tmpy = rand % 512 + targetint    // Randomness to decrease chance
     IfXIsMoreThanY
       SetOwnerToTarget
       EnchantTarget

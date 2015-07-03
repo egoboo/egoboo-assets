@@ -64,8 +64,8 @@ Else
         SendMessageNear
       Else
         SetOldTarget            // Remember the target
-        tmpdistance =  targetwis > 8
-        tmpx = rand & 31 + tmpdistance    // Check for wisdom
+        tmpdistance =  targetint > 8
+        tmpx = rand & 31 + tmpdistance    // Check for target intellect
         SetTargetToWhoeverIsHolding    // Check caster, not target
         tmpdistance = targetint > 8
         tmpy = rand & 31 + tmpdistance    // Check for intelligence

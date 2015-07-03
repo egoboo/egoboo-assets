@@ -90,8 +90,8 @@ Else
         SetTargetToWhoeverIsHolding
         tmpargument = 4
         SendMessageNear
-        tmpargument = targetwis > 1
-        tmpargument = rand % tmpargument + 512       // 2 + 0-1 damage per 2 points of wisdom
+        tmpargument = targetint > 1
+        tmpargument = rand % tmpargument + 512       // 2 + 0-1 damage per 2 points of intellect
         tmpdistance = DAMAGEHOLY
         SetTargetToOldTarget
         DamageTarget

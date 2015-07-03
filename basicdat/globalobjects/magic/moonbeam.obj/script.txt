@@ -106,9 +106,9 @@ Else
 
 IfTimeOut
   SetTargetToWhoeverIsHolding
-  tmpargument = targetwis > 8 * 3
-  tmpx = 130 - tmpargument          // Wisdom increases attack speed
-  tmpy = 10                         // 40 wisdom is perfect
+  tmpargument = targetint > 8 * 3
+  tmpx = 130 - tmpargument          // Intellect increases attack speed
+  tmpy = 10                         // 40 intellect is perfect
   IfXIsLessThanY
     tmpargument = 10            // Absolute maximum attack speed
   Else

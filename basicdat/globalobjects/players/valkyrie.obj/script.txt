@@ -171,7 +171,7 @@ IfXIsMoreThanY
         tmpy = 1000 - tmpturn
         IfXIsLessThanY
           tmpturn = targetdistance > 7          // Distance increases chance
-          tmpx = targetwis > 9
+          tmpx = targetint > 9
           tmpx = tmpx - tmpturn
           tmpx = rand % 40 + tmpx
           tmpy = selfdex > 10

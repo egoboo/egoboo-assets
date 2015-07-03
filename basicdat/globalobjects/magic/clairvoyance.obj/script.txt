@@ -77,14 +77,14 @@ Else
     SetReloadTime
 
     // Do stuff
-    tmpx = targetwis > 8
+    tmpx = targetint > 8
     tmpy = 23
     IfXIsMoreThanY
-      ShowYouAreHere      // Also display position if enough WIS (require 23)
+      ShowYouAreHere      // Also display position if enough INT (require 23)
       tmpy = 26
       IfXIsMoreThanY
         SetTargetToWhoeverIsHolding
-        tmpargument = RED // Also display enemies if enough WIS  (require 26)
+        tmpargument = RED // Also display enemies if enough INT  (require 26)
         AddBlipAllEnemies
     ShowMap
       tmpargument = 3

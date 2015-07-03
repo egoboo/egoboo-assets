@@ -77,9 +77,9 @@ IfGrabbed
   IfNameIsKnown
     DoNothing
   Else
-    // Identify with high wisdom
+    // Identify with high intellect
     tmpx = rand & 31
-    tmpy = rand & 31 + targetwis > 8
+    tmpy = rand & 31 + targetint > 8
     IfXIsLessThanY
       tmpargument = 25
       tmpdistance = EXPSECRET
@@ -94,7 +94,7 @@ IfTakenOut
 
     // Identify with high wisdom
     tmpx = rand & 31
-    tmpy = rand & 31 + targetwis > 8
+    tmpy = rand & 31 + targetint > 8
     IfXIsLessThanY
       tmpargument = 25
       tmpdistance = EXPSECRET

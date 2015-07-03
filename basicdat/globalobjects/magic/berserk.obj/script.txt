@@ -122,8 +122,8 @@ Else
         tmpx = targetint > 8
         tmpx = rand % 10 + tmpx       // 1-10 + INT
         SetTargetToWhoeverIsHolding
-        tmpy = targetwis > 8
-        tmpy = rand % 10 + tmpy      // 1-10 + WIS
+        tmpy = targetint > 8
+        tmpy = rand % 10 + tmpy      // 1-10 + INT
         SetTargetToOldTarget
         IfXIsLessThanY
 
@@ -147,9 +147,9 @@ Else
             tmpargument = 1
             PlaySound
 
-            // Berserk duration = 0.5 second per wisdom
+            // Berserk duration = 0.5 second per intellect
             SetTargetToWhoeverIsHolding
-            tmpargument = targetwis > 8
+            tmpargument = targetint > 8
             tmpargument = tmpargument * 25
             SetTime
 

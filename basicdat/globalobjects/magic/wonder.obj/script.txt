@@ -52,9 +52,9 @@ Else
     tmpargument = 6
     PlayFullSound
 
-    tmpturn = targetwis > 8     // +1 every wisdom
+    tmpturn = targetint > 8     // +1 every intellect
     tmpx = rand % 100 + tmpturn
-    tmpy = 40           // 40% badstuff -1% per wisdom
+    tmpy = 40           // 40% badstuff -1% per intellect
 
     // GOODSTUFF
     tmpargument = 5

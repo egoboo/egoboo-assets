@@ -365,7 +365,7 @@ IfTimeOut
       IfTargetIsOnHatedTeam
         IfTargetIsAlive
           tmpdistance = targetdistance * 2
-          tmpx = targetwis - tmpdistance        // -3 wisdom for every tile the target is away
+          tmpx = targetint - tmpdistance        // -3 intellect for every tile the target is away
           tmpy = selfdex
           IfXIsMoreThanY
             tmpargument = 0

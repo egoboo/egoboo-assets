@@ -2460,7 +2460,6 @@ selfmana
   // The mana of the character...  Value is * 256
 --------------------------------------------------------------------------------
 targetstr
-targetwis
 targetint
 targetdex
 targetlife
@@ -2486,7 +2485,6 @@ selfstate
   // The character's state
 --------------------------------------------------------------------------------
 selfstr
-selfwis
 selfint
 selfdex
 selfmanaflow

@@ -120,8 +120,8 @@ Else
         tmpx = targetint > 8
         tmpx = rand % 10 + tmpx       // 1-10 + INT
         SetTargetToOwner
-        tmpy = targetwis > 8
-        tmpy = rand % 10 + tmpy      // 1-10 + WIS
+        tmpy = targetint > 8
+        tmpy = rand % 10 + tmpy      // 1-10 + INT
         SetTargetToOldTarget
         IfXIsLessThanY
 
@@ -133,7 +133,7 @@ Else
 
             // Damage
             SetTargetToOwner
-            tmpargument = targetwis > 9     // 1 damage per 2 wisdom
+            tmpargument = targetint > 9     // 1 damage per 2 intellect
             SetTargetToOldTarget
             DamageTarget
 

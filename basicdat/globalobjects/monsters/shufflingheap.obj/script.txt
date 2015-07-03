@@ -34,7 +34,7 @@ IfTimeOut
         SetState
       Else
         tmpx = targetdex
-        tmpy = rand % 1280 + selfwis
+        tmpy = rand % 1280 + selfint
         IfXIsLessThanY
           tmpargument = STATECOMBAT
           SetState

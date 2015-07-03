@@ -88,7 +88,7 @@ Else
     SpawnExactParticle
     SetOldTarget
     SetTargetToWhoeverIsHolding
-    tmpargument = targetwis    // Heal 1 life per wisdom point (Also cures poison)
+    tmpargument = targetint    // Heal 1 life per intellect point (Also cures poison)
     SetTargetToOldTarget
     HealTarget          // Also removes [HEAL] enchants
     tmpargument = [REST]

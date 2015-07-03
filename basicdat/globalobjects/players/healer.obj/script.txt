@@ -95,7 +95,7 @@ IfKilled
   tmpy = 8            // Need level 10
   IfXIsMoreThanY
     tmpx = rand % 100
-    tmpy = selfwis > 9          // % chance equal to wis/2
+    tmpy = selfint > 9          // % chance equal to int/2
     IfXIsLessThanY
       SetTargetToSelf
       RespawnTarget

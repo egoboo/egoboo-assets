@@ -26,7 +26,7 @@ IfSpawned
 
     // Level 3 or 4 mounts get 25% bonus speed!
     SetTargetToOwner
-    tmpdistance = targetwis > 8           // Every point of wisdom adds 1% speed
+    tmpdistance = targetint > 8           // Every point of intellect adds 1% speed
     tmpx = selfstate
     tmpy = 3
     IfXIsMoreThanY

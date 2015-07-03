@@ -1291,7 +1291,7 @@ Teleport
 //Permanently changes the specified stat for the target
 //The value can be negative as well.
 GiveStrengthToTarget
-GiveWisdomToTarget
+GiveIntellectToTarget
 GiveIntelligenceToTarget
 GiveDexterityToTarget
 GiveLifeToTarget

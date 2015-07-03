@@ -1255,7 +1255,7 @@ Teleport
   Teleport
 --------------------------------------------------------------------------------
 GiveStrengthToTarget
-GiveWisdomToTarget
+GiveIntellectToTarget
 GiveIntelligenceToTarget
 GiveDexterityToTarget
 GiveLifeToTarget

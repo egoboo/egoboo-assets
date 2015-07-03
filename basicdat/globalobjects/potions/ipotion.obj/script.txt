@@ -70,7 +70,7 @@ IfUsed
 
     // Decrease max wis a little
     tmpargument = 0 - 32
-    GiveWisdomToTarget
+    GiveIntellectToTarget
 
     tmpargument = ACTIONMC
     TargetDoAction

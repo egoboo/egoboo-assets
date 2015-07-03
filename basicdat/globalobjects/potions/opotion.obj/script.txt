@@ -37,9 +37,8 @@ IfUsed
     GoPoof
 
   // Permanently lower some stats
-  tmpargument = 0 - 32
-  GiveWisdomToTarget
-  GiveIntelligenceToTarget
+  tmpargument = 0 - 64
+  GiveIntellectToTarget
 
 // Set up general stuff
 IfSpawned

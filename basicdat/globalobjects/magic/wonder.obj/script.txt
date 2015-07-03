@@ -104,7 +104,7 @@ Else
       IfStateIs2                    // 3 - Raise one random stat
         tmpargument = 7
         PlayFullSound
-        tmpargument = rand % 6
+        tmpargument = rand % 5
         SetState
         tmpargument = 256
         IfStateIs0
@@ -120,10 +120,7 @@ Else
           GiveStrengthToTarget
           tmpargument = 18
         IfStateIs4
-          GiveWisdomToTarget
-          tmpargument = 19
-        IfStateIs5
-          GiveIntelligenceToTarget
+          GiveIntellectToTarget
           tmpargument = 20
         SendMessage
       IfStateIs3                    // 4 - Immortal

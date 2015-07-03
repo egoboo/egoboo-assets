@@ -374,8 +374,7 @@ IfTimeOut
         GiveLifeToTarget
 
       tmpargument = 2560
-      GiveIntelligenceToTarget            // Give 10 intelligence
-      GiveWisdomToTarget                  // Give 10 wisdom
+      GiveIntellectToTarget              // Give 10 intelligence
 
       tmpargument = 898                   // Give 3.5 friggin mana flow!
       GiveManaFlowToTarget

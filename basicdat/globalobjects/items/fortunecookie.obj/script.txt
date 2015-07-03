@@ -107,9 +107,9 @@ IfUsed
     tmpargument = rand & 255 + 256    // 1-2 hp
     HealTarget
 
-    // Eating a cookie always provides some wisdom
+    // Eating a cookie always provides some intellect
     tmpargument = 16
-    GiveWisdomToTarget
+    GiveIntellectToTarget
     tmpargument = 5
     tmpdistance = EXPSECRET
     GiveExperienceToTarget

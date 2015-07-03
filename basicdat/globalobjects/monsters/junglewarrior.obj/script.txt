@@ -17,8 +17,7 @@ IfSpawned
   IfArmorIs
     SetTargetToSelf
     tmpargument = rand & 1023 + 1024     // 4-8 bonus
-    GiveWisdomToTarget
-    GiveIntelligenceToTarget
+    GiveIntellectToTarget
 
   // Figure out how many spears we have to spare
   SetTargetToSelf

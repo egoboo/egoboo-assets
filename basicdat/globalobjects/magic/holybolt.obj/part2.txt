@@ -106,4 +106,4 @@ Life drain on hit ( 0 to 50 )				: 0
 :[BLOC] 1 // Can't be blocked
 :[ARMO] 1 // Armor piercing
 :[TIME] 1 // Doesn't set invulnerability time on collision
-:[WDAM] 1 // Wisdom adds extra damage
+:[IDAM] 1 // Intellect adds extra damage

@@ -106,4 +106,4 @@ Life drain on hit ( 0 to 50 )				: 0
 :[ZSPD] 20 // Max Z velocity for aiming up and down at targets
 :[BLOC] 1  // Can't be blocked
 :[TIME] 1  // Doesn't set invulnerability time on collision
-:[WDAM] 1  // Wisdom adds damage
+:[IDAM] 1 // Intellect adds extra damage

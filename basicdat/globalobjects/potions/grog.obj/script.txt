@@ -82,9 +82,8 @@ IfUsed
       HealTarget
       tmpargument = 16            // Permanent strength bonus
       GiveStrengthToTarget
-      tmpargument = -8            // Permanent mental penality
-      GiveIntelligenceToTarget
-      GiveWisdomToTarget
+      tmpargument = -16            // Permanent mental penality
+      GiveIntellectToTarget
       tmpargument = 7
     Else
       tmpargument = rand % 5 + 8  // It's too much for others

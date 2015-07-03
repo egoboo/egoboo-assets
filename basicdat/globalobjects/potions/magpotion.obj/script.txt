@@ -64,9 +64,8 @@ IfUsed
   SetTargetToWhoeverIsHolding
 
     // Decrease int and wis a little
-    tmpargument = 0 - 20
+    tmpargument = 0 - 40
     GiveIntelligenceToTarget
-    GiveWisdomToTarget
 
     // Remove any existing magic on the target
     tmpargument = [DISP]

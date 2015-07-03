@@ -193,7 +193,7 @@ Sound of Jump ( -1 for none )			: -1
 
 
 // Expansions
-:[PACK] 0	Don't allow it to be placed in inventory
+:[PACK] 0	//Don't allow it to be placed in inventory
 
 
 //-Notes------------------------------------------------------------------------

@@ -7,7 +7,7 @@ Gender (MALE, FEMALE OR OTHER)	: OTHER
 
 Life color     	: 1
 Mana color   	  : 5
-Life          		 : 10-14
+Life          		 : 8-12
 Life up       		 : 1.00-2
 Mana          	 : 0.00
 Mana up       	 : 0.00-0.00

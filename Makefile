@@ -8,7 +8,15 @@ ifndef ($(PREFIX),"")
 	#!!!! error the PREFIX is not defined. The install will not work properly
 endif
 
+.PHONY: install uninstall
+
 install:
+ifeq ($(PREFIX),)
+	$(error PREFIX is empty, will not install)
+endif
+ifeq ($(PROJ_NAME),)
+	$(error PROJ_NAME is empty, will not install)
+endif
 
 	######################################
 	# Thank you for installing the data files for egoboo! 
@@ -35,3 +43,13 @@ install:
 	#####################################
 	# Installation of the egoboo data files has completed
 	#####################################
+
+uninstall:
+ifeq ($(PREFIX),)
+	$(error PREFIX is empty, will not uninstall)
+endif
+ifeq ($(PROJ_NAME),)
+	$(error PROJ_NAME is empty, will not uninstall)
+endif
+
+	rm -r ${PREFIX}/share/games/${PROJ_NAME}/ ${PREFIX}/etc/${PROJ_NAME}/

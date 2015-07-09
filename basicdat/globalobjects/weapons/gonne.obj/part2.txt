@@ -48,7 +48,7 @@ Facing base ( 0 to 65535 )				: 0
 Facing randomness ( 0, 1, 3, 7, 15, 31, 63... )		: 4095
 XY Spacing ( 0 to 100 )					: -120
 XY Spacing randomness ( 0, 1, 3, 7, 15, 31, 63... )	: 0
-Z Spacing ( -100 to 100 )				: -40
+Z Spacing ( -100 to 100 )				: 32
 Z Spacing randomness ( 0, 1, 3, 7, 15, 31, 63... )	: 0
 XY Velocity ( 0 to 100 )				: 50
 XY Velocity randomness ( 0, 1, 3, 7, 15, 31, 63... )	: 0
@@ -107,3 +107,4 @@ Life drain on hit ( 0 to 50 )				: 0
 :[ARMO] 1  // Armor piercing ( base defense for target = 0 )
 :[BLOC] 1  // Can't be blocked
 :[ORNT] Z  // Axis
+:[GRAV] 1  // Not affected by gravity

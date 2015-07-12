@@ -1,6 +1,6 @@
 // Wizard special abillties:
 // LEVEL   ABILLITY
-// 1     - Alchemy, Arcane Magic
+// 1     - Alchemy
 // 2     - n/a
 // 3     - Magical Ampitude
 // 4     - n/a
@@ -10,7 +10,7 @@
 // 8     - Elemental Staff
 // 9     - n/a
 // 10    - n/a
-// 11    - Mystic Intellect
+// 11    - n/a
 // 12    - n/a
 // 13    - n/a
 // 14    - Wizard's Missile
@@ -20,18 +20,6 @@ IfSpawned
   tmpargument = 0
   SetState
   SetContent
-
-//------------------------------------------------------------------------------
-// Mystic Intellect skill
-IfStateIs0
-  SetTargetToSelf
-  tmpx = selflevel
-  tmpy = 9              // Level 11
-  IfXIsMoreThanY
-    SetOwnerToTarget
-    EnchantTarget     // Give the special bonus
-    tmpargument = 1
-    SetState
 
 //------------------------------------------------------------------------------
 // Wizard's missile skill

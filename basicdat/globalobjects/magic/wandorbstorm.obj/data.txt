@@ -91,7 +91,7 @@ EXPROLEPLAY    : 1.00
 
 IDSZ Parent    : [WAND]
 IDSZ Type      : [NONE]
-IDSZ Skill     : [WMAG]
+IDSZ Skill     : [WAND]
 IDSZ Special   : [NONE]
 IDSZ Hate      : [NONE]
 IDSZ Vulnie    : [NONE]

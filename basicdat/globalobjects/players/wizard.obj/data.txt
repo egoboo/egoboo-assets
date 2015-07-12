@@ -197,5 +197,21 @@ Sound of Jump ( -1 for none )			: 1
 :[DRES] 1
 :[DRES] 2
 :[DRES] 3
-:[WMAG] 1
-:[READ] 1
+
+//Starting Perks
+:[PERK] Arcane_Magic
+:[PERK] Literacy
+:[PERK] Thaumaturgy
+
+//Perks that this class can learn (should be at least 22)
+:[POOL] Cartography
+:[POOL] Navigation
+:[POOL] Fast_Learner
+:[POOL] Read_G'nomish
+:[POOL] Perceptive
+:[POOL] Wand_Mastery
+:[POOL] Elemental_Resistance
+:[POOL] Fire_Ward
+:[POOL] Ice_Ward
+:[POOL] Zap_Ward
+:[POOL] Power

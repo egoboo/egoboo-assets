@@ -225,6 +225,11 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Perceptive
 :[POOL] Wand_Mastery
 :[POOL] Jousting
+:[POOL] Elemental_Resistance
+:[POOL] Fire_Ward
+:[POOL] Ice_Ward
+:[POOL] Zap_Ward
+:[POOL] Power
 
 //-Notes------------------------------------------------------------------------
 // Money, items, skin, name, team, and position are all set at spawn time

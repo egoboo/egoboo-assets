@@ -1,22 +1,22 @@
 // ADVENTURER
 //-------------------------------------------
 // Level       Abillity
-// 1            Weapon Profiency, Arcane Magic
+// 1            n/a
 // 2            n/a
 // 3            n/a
 // 4            Alchemy
 // 5            n/a
 // 6            n/a
-// 7         Speed
+// 7         n/a
 // 8            n/a
 // 9         n/a
 // 10        Stealth
 // 11        n/a
 // 12        n/a
-// 13        Listen
+// 13        n/a
 // 14        n/a
 // 15        n/a
-// 16        Class Mastery
+// 16        n/a
 
 //-----------------------------------------------------------------------------
 // Reset
@@ -137,72 +137,6 @@ IfXIsMoreThanY
       PlaySound
     tmpargument = 1
     SetState
-
-//-----------------------------------------------------------------------------
-// Handle skills gained from level ups
-IfLevelUp
-
-  // Listen skill
-  tmpx = selflevel
-  tmpy = 11             // Level 13
-  IfXIsEqualToY
-    SetTargetToSelf
-    tmpargument = [LIST]
-    tmpdistance = 1
-    GiveSkillToTarget
-
-//-----------------------------------------------------------------------------
-// Speed abillity
-tmpx = selflevel
-tmpy = 5            // Need Level 7
-IfXIsMoreThanY
-  SetTargetToSelf
-  tmpx = targetmaxlife > 2
-  tmpx = targetmaxlife > 1 + tmpx          // 0.75 of max life
-  tmpy = targetlife
-  IfXIsMoreThanY              // Only if at 75% life or better
-    Run
-  Else
-    Run
-    tmpargument = 1+selflevel+100       // 1 percent bonus per level
-    SetSpeedPercent
-
-//------------------------------------------------------------------------------
-// Invoke Class Mastery if enough xp gained
-tmpargument = 0
-
-IfContentIs
-  SetTargetToSelf
-  tmpx = selflevel
-  tmpy = 18              // Need level 20
-  IfXIsMoreThanY
-    SetOwnerToTarget
-    EnchantTarget     // Give the special bonus
-    tmpargument = 1
-    SetContent      // Dont repeat
-
-//------------------------------------------------------------------------------
-// Invoke Class Mastery if enough xp gained
-SetTargetToSelf
-tmpx = selflevel
-tmpy = 18              // Need level 20
-IfXIsMoreThanY
-
-  tmpargument = 0
-  IfContentIs
-    SetOwnerToTarget
-    EnchantTarget     // Give the special bonus
-    tmpargument = 1
-    SetContent          // Dont repeat
-
-Else
-
-  tmpargument = 1
-  IfContentIs
-    UndoEnchant        // Remove if needed xp is lost
-
-    tmpargument = 0
-    SetContent          // Dont repeat
 
 //-----------------------------------------------------------------------------
 // ZZ> Gong sound

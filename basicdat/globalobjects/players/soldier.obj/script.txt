@@ -1,6 +1,6 @@
 // Soldier special abillties:
 // LEVEL   ABILLITY
-// 1     - Weapon Profiency, Defender (100% block rating)
+// 1     - n/a
 // 2     - Critical Strike
 // 3     - n/a
 // 4     - n/a
@@ -13,7 +13,7 @@
 // 11    - Grogging Hit
 // 12    - n/a
 // 13    - n/a
-// 14    - Hardy
+// 14    - n/a
 //-----------------------------------------------------------------------------
 // Reset
 IfSpawned
@@ -25,14 +25,6 @@ IfSpawned
 // For sunder strikes
 IfSpawned
   SetOwnerToTarget
-
-//-----------------------------------------------------------------------------
-// Damage resist skill
-tmpx = selflevel
-tmpy = 12            // At least level 14
-IfXIsMoreThanY
-  tmpargument = selflevel * 24       // Reduce all damage by 1/10 per level
-  SetDamageThreshold
 
 //-----------------------------------------------------------------------------
 IfHitGround

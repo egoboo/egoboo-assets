@@ -198,6 +198,30 @@ Sound of Jump ( -1 for none )			: 1
 :[READ] 1		//Literate
 :[AWEP] 1             //Advanced weapons profiency
 
+//Starting Perks
+:[PERK] Arcane_Magic
+:[PERK] Literacy
+
+//Perks that this class can learn (should be at least 22)
+:[POOL] Toughness
+:[POOL] Cartography
+:[POOL] Navigation
+:[POOL] Acrobatic
+:[POOL] Master_Acrobat
+:[POOL] Sprint
+:[POOL] Dash
+:[POOL] Mobility
+:[POOL] Weapon_Proficiency
+:[POOL] Defender
+:[POOL] Mobile_Defence
+:[POOL] Hold_the_Line
+:[POOL] Fast_Learner
+:[POOL] Dodge
+:[POOL] Stalwart
+:[POOL] Poisonry
+:[POOL] Trap_Lore
+:[POOL] Read_G'nomish
+:[POOL] Perceptive
 
 //-Notes------------------------------------------------------------------------
 // Money, items, skin, name, team, and position are all set at spawn time

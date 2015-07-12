@@ -1,6 +1,6 @@
 // Elf special abillties:
 // LEVEL   ABILLITY
-// 1     - Weapon Profiency, Arcane Magic
+// 1     - n/a
 // 2     - n/a
 // 3     - n/a
 // 4     - n/a
@@ -10,25 +10,16 @@
 // 8     - Bow Mastery
 // 9     - n/a
 // 10    - n/a
-// 11    - Acrobatic (double jump)
+// 11    - n/a
 // 12    - n/a
 // 13    - n/a
-// 14    - Danger Sense
+// 14    - n/a
 //-----------------------------------------------------------------------------
 // Reset
 IfSpawned
   tmpargument = 0
   SetState
   SetContent
-
-//-----------------------------------------------------------------------------
-// Danger sense skill
-tmpx = selflevel
-tmpy = 12          // Need level 14
-IfXIsMoreThanY
-  SetTargetToSelf           // Make sure the enemy is correct
-  tmpargument = [NONE]      // All enemies
-  AddBlipAllEnemies         // Reveal 'em all
 
 //-----------------------------------------------------------------------------
 // Go stealth mode when standing still
@@ -132,20 +123,6 @@ IfXIsMoreThanY
       SetTargetToWhoeverWasHit
       tmpargument = 512
       DamageTarget          // +2 damage
-
-//------------------------------------------------------------------------------
-// Invoke Elven Senses if enough xp gained
-tmpargument = 0
-
-IfContentIs
-  tmpx = selflevel
-  tmpy = 9          // Need level 11
-  IfXIsMoreThanY
-    SetTargetToSelf
-    SetOwnerToTarget
-    EnchantTarget     // Give the special bonus
-    tmpargument = 1
-    SetContent
 
 //-----------------------------------------------------------------------------
 // ZZ> Gong sound

@@ -195,8 +195,6 @@ Sound of Jump ( -1 for none )			: 1
 // Expansions
 :[DRES] 0
 :[DRES] 3
-:[READ] 1		//Literate
-:[AWEP] 1             //Advanced weapons profiency
 
 //Starting Perks
 :[PERK] Arcane_Magic
@@ -230,6 +228,8 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Ice_Ward
 :[POOL] Zap_Ward
 :[POOL] Power
+:[POOL] Endurance
+:[POOL] Athletics
 
 //-Notes------------------------------------------------------------------------
 // Money, items, skin, name, team, and position are all set at spawn time

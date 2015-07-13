@@ -1,22 +1,22 @@
 // G'NOME
 //-------------------------------------------
 // Level       Abillity
-// 1            Use Technological Items, Read G'nomish, Immune vs. Grog, Poison Resistance, Literate
+// 1            Immune vs. Grog, Poison Resistance
 // 2            n/a
 // 3            n/a
-// 4            Listen
+// 4            n/a
 // 5            n/a
 // 6            n/a
-// 7            Crackshot
+// 7            n/a
 // 8            n/a
 // 9            n/a
-// 10        Sharpshooter
+// 10        n/a
 // 11        n/a
 // 12        n/a
-// 13    Hardy
+// 13    n/a
 // 14    n/a
 // 15    n/a
-// 16    Ancient Blud
+// 16    n/a
 // 17    n/a
 // 18    n/a
 // 19    n/a
@@ -27,19 +27,6 @@ IfSpawned
   tmpargument = 0
   SetState
   SetContent
-
-//-----------------------------------------------------------------------------
-// Handle skills gained from level ups
-IfLevelUp
-
-  // Listen skill
-  tmpx = selflevel
-  tmpy = 3             // Level 4
-  IfXIsEqualToY
-    SetTargetToSelf
-    tmpargument = [LIST]
-    tmpdistance = 1
-    GiveSkillToTarget
 
 //-----------------------------------------------------------------------------
 // Nuclear blast death (Things that go Boom skill)
@@ -58,49 +45,6 @@ IfKilled
     tmpargument = 13
     tmpdistance = 150
     PlaySoundVolume
-
-//-----------------------------------------------------------------------------
-// Sharpshooter skill
-tmpx = selflevel
-tmpy = 8            // Need level 10
-IfXIsMoreThanY
-  IfScoredAHit
-    SetTargetToLastItemUsed
-      tmpargument = [TECH]
-      IfTargetHasSkillID
-        SetTargetToWhoeverWasHit
-        tmpargument = 256
-        DamageTarget
-
-//-----------------------------------------------------------------------------
-// Crackshot skill
-tmpx = selflevel
-tmpy = 5            // Need level 7
-IfXIsMoreThanY
-  IfScoredAHit
-    SetTargetToLastItemUsed
-      tmpargument = [TECH]
-      IfTargetHasSkillID
-        tmpx = rand % 100
-        tmpy = selfint > 9              // % chance equal to int/2
-        IfXIsLessThanY
-          SetTargetToWhoeverWasHit
-          tmpargument = selflevel > 2   // +1 every 4 levels
-          DazeTarget
-
-          // Draw the text
-          tmpdistance = 3         // Duration
-          tmpargument = 1         // Message 9
-          tmpturn = WHITE         // Message color
-          DrawBillboard
-
-//-----------------------------------------------------------------------------
-// Damage resist skill
-tmpx = selflevel
-tmpy = 11            // At least level 13
-IfXIsMoreThanY
-  tmpargument = selflevel * 20       // Reduce all damage by 1/12 per level
-  SetDamageThreshold
 
 //-----------------------------------------------------------------------------
 // ZZ> Yell at the player
@@ -130,13 +74,6 @@ IfTimeOut
     IfHoldingItemID
       tmpargument = 256
       HealSelf
-
-  // Ancient blud skill
-  tmpx = selflevel
-  tmpy = 14            // Need level 16
-  IfXIsMoreThanY
-    tmpargument = 192   // regenerate 3/4 life point every 4 seconds
-    HealSelf
 
 //------------------------------------------------------------------------------
 // ZZ> Scream and shout

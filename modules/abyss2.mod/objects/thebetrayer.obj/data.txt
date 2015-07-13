@@ -195,7 +195,6 @@ Sound of Jump ( -1 for none )			: 1
 // Expansions
 :[READ] 1		      //Literate
 :[AWEP] 1             //Advanced weapons profiency
-:[SPHR] 4             //Shield profiency
 
 
 //-Notes------------------------------------------------------------------------

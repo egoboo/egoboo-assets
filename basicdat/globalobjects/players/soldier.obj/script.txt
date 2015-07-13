@@ -1,7 +1,7 @@
 // Soldier special abillties:
 // LEVEL   ABILLITY
 // 1     - n/a
-// 2     - Critical Strike
+// 2     - n/a
 // 3     - n/a
 // 4     - n/a
 // 5     - Sunder Strike
@@ -41,27 +41,6 @@ IfXIsMoreThanY
     SetTargetToWhoeverWasHit
     tmpargument = 512           // +2 damage
     DamageTarget
-
-//-----------------------------------------------------------------------------
-// Critical hit abillity
-tmpx = selflevel
-tmpy = 0             // Need level 2
-IfXIsMoreThanY
-  IfScoredAHit
-    SetTargetToWhoeverWasHit
-    tmpx = rand % 100
-    tmpy = selflevel          // 1% chance * (level-1)
-    IfXIsLessThanY
-      tmpargument = 128*selflevel + 128     // 0.5 extra damage per level
-      DamageTarget
-      tmpargument = 10
-      PlaySound
-
-      // Draw the text
-      tmpdistance = 3         // Duration
-      tmpargument = 7         // Message 7
-      tmpturn = RED           // Message color
-      DrawBillboard
 
 //-----------------------------------------------------------------------------
 // Sunder attack abillity

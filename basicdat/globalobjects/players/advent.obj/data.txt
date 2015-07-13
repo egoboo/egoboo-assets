@@ -230,6 +230,10 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Power
 :[POOL] Endurance
 :[POOL] Athletics
+:[POOL] Critical_Hit
+:[POOL] Lucky
+:[POOL] Deadly_Strike
+:[POOL] Sharpshooter
 
 //-Notes------------------------------------------------------------------------
 // Money, items, skin, name, team, and position are all set at spawn time

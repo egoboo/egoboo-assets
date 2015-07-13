@@ -230,6 +230,11 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Fire_Ward
 :[POOL] Ice_Ward
 :[POOL] Zap_Ward
+:[POOL] Sharpshooter
+:[POOL] Deadly_Strike
+:[POOL] Critical_Hit
+:[POOL] Lucky
+:[POOL] Athletics
 
 //-Notes------------------------------------------------------------------------
 // Money, items, skin, name, team, and position are all set at spawn time

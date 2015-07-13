@@ -44,8 +44,8 @@ IfUsed
         tmpx = targetmana
         IfXIsMoreThanY
           tmpx = 0
-          tmpargument = [WIZA]      // Level 5 wizards have 33% reduced mana cost
-          IfTargetHasID
+          tmpargument = [TELE]      // Teleport Mastery has 33% reduced mana cost
+          IfTargetHasSkillID
             tmpx = 1
           tmpargument = [ARCH]      // Archmages get this bonus as well
           IfTargetHasID
@@ -81,8 +81,8 @@ Else            // Player released the charge
     // Spawn the magic effects
     SetTargetToWhoeverIsHolding
     tmpdistance = 0
-    tmpargument = [WIZA]
-    IfTargetHasID           // Level 5 Wizards have a 100% success
+    tmpargument = [TELE]
+    IfTargetHasID           // Teleport Mastery always has 100% success
       tmpx = targetlevel
       tmpy = 3
       IfXIsMoreThanY

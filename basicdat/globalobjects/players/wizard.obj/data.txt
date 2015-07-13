@@ -215,3 +215,5 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Ice_Ward
 :[POOL] Zap_Ward
 :[POOL] Power
+:[POOL] Teleport_Mastery
+:[POOL] Disintegrate

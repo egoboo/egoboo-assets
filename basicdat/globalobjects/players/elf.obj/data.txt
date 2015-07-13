@@ -235,6 +235,7 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Critical_Hit
 :[POOL] Lucky
 :[POOL] Athletics
+:[POOL] Quick_Strike
 
 //-Notes------------------------------------------------------------------------
 // Money, items, skin, name, team, and position are all set at spawn time

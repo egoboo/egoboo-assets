@@ -103,7 +103,7 @@ IfBumped
           SetState
           IfStateIs2
             // It has a false bottom
-            tmpargument = [DISA]
+            tmpargument = [FIND]
             IfTargetHasSkillID
               // Character easily finds the false bottom
               tmpargument = 1

@@ -200,6 +200,7 @@ Sound of Jump ( -1 for none )			: 1
 :[PERK] Arcane_Magic
 :[PERK] Literacy
 :[PERK] Thaumaturgy
+:[PERK] Jack_of_All_Trades
 
 //Perks that this class can learn (should be at least 22)
 :[POOL] Toughness
@@ -234,6 +235,8 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Lucky
 :[POOL] Deadly_Strike
 :[POOL] Sharpshooter
+:[POOL] Quick_Strike
+:[POOL] Teleport_Mastery
 
 //-Notes------------------------------------------------------------------------
 // Money, items, skin, name, team, and position are all set at spawn time

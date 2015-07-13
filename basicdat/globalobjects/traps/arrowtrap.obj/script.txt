@@ -14,7 +14,7 @@ IfTimeOut
   tmpargument = 0
   IfArmorIs
     tmpdistance = BLAHPLAYERS + BLAHENEMIES + BLAHFRIENDS + BLAHSKILL
-    tmpturn = [DISA]
+    tmpturn = [FIND]
     tmpargument = [NONE]
     SetTargetToWideBlahID
       tmpx = targetdistance

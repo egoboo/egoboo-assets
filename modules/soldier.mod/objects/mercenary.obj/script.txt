@@ -132,7 +132,7 @@ IfAttacked
   // STATE 4 - SLEEPING
   IfStateIs5
     // A sleeping prisoner
-    tmpargument = [DISA]
+    tmpargument = [STAB]
     IfTargetHasSkillID
       // This is what Rogues do best...
       tmpargument = 5

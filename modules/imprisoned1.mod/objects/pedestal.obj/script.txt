@@ -23,7 +23,7 @@ IfStateIs0
     // Check for trapfinders to find it
     tmpdistance = 128*3
     SetTargetToDistantEnemy
-      tmpargument = [DISA]            // Does the target have disarm skill?
+      tmpargument = [FIND]            // Does the target have disarm skill?
       IfTargetHasSkillID
         IfTargetIsAPlayer            // Only for players
           tmpargument = 0            // Not detected yet

@@ -39,7 +39,7 @@ IfTimeOut
   // Check for trapfinders to find it
   IfStateIs0            // Not detected yet
     IfTargetIsAPlayer            // Only for players
-      tmpargument = [DISA]            // Does the target have disarm skill?
+      tmpargument = [FIND]            // Does the target have perception skill?
       IfTargetHasSkillID
         tmpx = targetdistance
         tmpy = 500            // Detect range

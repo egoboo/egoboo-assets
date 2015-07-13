@@ -222,6 +222,7 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Lucky
 :[POOL] Deadly_Strike
 :[POOL] Sharpshooter
+:[POOL] Quick_Strike
 
 //-Notes------------------------------------------------------------------------
 // This is not the orginal Soldier, it's modified by Zefz for more game balance.

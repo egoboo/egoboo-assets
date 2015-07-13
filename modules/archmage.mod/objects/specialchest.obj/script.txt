@@ -157,7 +157,7 @@ IfBumped
             tmpx = selfstate
             tmpy = 2
             IfXIsMoreThanY
-              tmpargument = [DISA]
+              tmpargument = [FIND]
               IfTargetHasSkillID
                 tmpx = 65535              // Character easily finds the false bottom
               Else

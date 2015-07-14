@@ -1,7 +1,7 @@
 // HEALER
 //-------------------------------------------
 // Level       Abillity
-// 1            Divine Magic, See Kurses
+// 1            n/a
 // 2            n/a
 // 3            n/a
 // 4            Holy Aura
@@ -13,7 +13,7 @@
 // 10        Guardian Angel
 // 11      n/a
 // 12        n/a
-// 13        Immune vs. Kurses
+// 13        n/a
 // 14      n/a
 // 15        n/a
 // 16        Last Boon
@@ -23,16 +23,6 @@ IfSpawned
   tmpargument = 0
   SetState
   SetContent
-
-//-----------------------------------------------------------------------------
-// Immune vs. kurses abillity
-tmpx = selflevel
-tmpy = 11
-
-// Gain abillity at 13th level
-IfXIsMoreThanY
-  SetTargetToSelf
-  UnkurseTargetInventory
 
 //-----------------------------------------------------------------------------
 // Invoke Divine Power if enough xp gained

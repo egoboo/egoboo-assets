@@ -226,6 +226,11 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Critical_Hit
 :[POOL] Lucky
 :[POOL] Sharpshooter
+:[POOL] Crossbow_Mastery
+:[POOL] Wolverine
+:[POOL] Bookworm
+:[POOL] Lore_Master
+:[POOL] Improvised_Weapons
 
 
 //-Notes------------------------------------------------------------------------

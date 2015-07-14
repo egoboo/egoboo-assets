@@ -195,9 +195,34 @@ Sound of Jump ( -1 for none )			: 10
 // Expansions
 :[DRES] 0	//Skin is dressy
 :[DRES] 2	//Skin is dressy
-:[READ] 1	//Character can read
-:[CKUR] 1	//Able to see kurses
-:[HMAG] 1	//Able to use divine magic
+
+//Starting perks
+:[PERK] Literacy
+:[PERK] Divine_Magic
+
+//Perks that this class can learn
+:[POOL] Toughness
+:[POOL] Defender
+:[POOL] Mobile_Defence
+:[POOL] Hold_The_Line
+:[POOL] Fast_Learner
+:[POOL] Read_G'nomish
+:[POOL] Stalwart
+:[POOL] Perfection
+:[POOL] Endurance
+:[POOL] Athletics
+:[POOL] Critical_Hit
+:[POOL] Sense_Kurses
+:[POOL] Protection_from_Kurses
+:[POOL] Power
+:[POOL] Sense_Undead
+:[POOL] Crusader
+:[POOL] Meditation
+:[POOL] Bookworm
+:[POOL] Lore_Master
+:[POOL] Blunt_Weapons_Mastery
+:[POOL] Brutal_Strike
+
 
 //-Notes------------------------------------------------------------------------
 // Money, items, skin, name, team, and position are all set at spawn time

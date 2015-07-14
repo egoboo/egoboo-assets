@@ -195,10 +195,38 @@ Sound of Jump ( -1 for none )			: 1
 // Expansions
 :[DRES] 0		//Skin is dressy
 :[DRES] 3		//Skin is dressy
-:[READ] 1		//Can read
-:[AWEP] 1		//Can use Advanced Weapons
-:[JOUS] 1		//Can use lance to joust
 :[CODE] 1   //Follows a lawful code of conduct
+
+//Starting perks
+:[PERK] Weapon_Proficiency
+:[PERK] Jousting
+:[PERK] Literacy
+:[PERK] Divine_Magic
+
+//Perks that this class can learn
+:[POOL] Toughness
+:[POOL] Gigantism
+:[POOL] Defender
+:[POOL] Mobile_Defence
+:[POOL] Hold_The_Line
+:[POOL] Fast_Learner
+:[POOL] Read_G'nomish
+:[POOL] Stalwart
+:[POOL] Perfection
+:[POOL] Endurance
+:[POOL] Athletics
+:[POOL] Critical_Hit
+:[POOL] Lucky
+:[POOL] Sense_Kurses
+:[POOL] Protection_from_Kurses
+:[POOL] Power
+:[POOL] Sense_Undead
+:[POOL] Crusader
+:[POOL] Meditation
+:[POOL] Blunt_Weapons_Mastery
+:[POOL] Brutal_Strike
+:[POOL] Polearm_Mastery
+:[POOL] Sword_Mastery
 
 //-Notes------------------------------------------------------------------------
 // This is not the original paladin, it's modified by zefz for game balance and starter

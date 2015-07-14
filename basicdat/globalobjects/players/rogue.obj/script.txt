@@ -1,13 +1,13 @@
 // Rogue special abillties:
 // LEVEL   ABILITY
-// 1     - Backstab, Disarm Traps, Poison Use, Acrobatics
+// 1     - n/a
 // 2     - Stealth (Standing still)
-// 3     - Mobility
+// 3     - n/a
 // 4     - Sneak (Can move 1 step at the time while stealthing)
-// 5     - Listen
+// 5     - n/a
 // 6     - Stalker (Can sneak while stealthing)
 // 7     - n/a
-// 8     - Master Acrobacy
+// 8     - n/a
 // 9     - n/a
 // 10    - Shade (Move and jump while stealthed)
 // 11    - n/a
@@ -15,7 +15,7 @@
 // 13    - Hide in Plain Sight
 // 14    - n/a
 // 15    - n/a
-// 16    - Deadly Strike
+// 16    - n/a
 // 17    - n/a
 // 18    - n/a
 // 19    - n/a
@@ -26,72 +26,6 @@ IfSpawned
   tmpargument = 0
   SetState
   SetContent
-
-//-----------------------------------------------------------------------------
-// Auto jump over corpses (Mobility skill)
-tmpx = selflevel
-tmpy = 2          // Need level 3
-IfXIsMoreThanY
-  IfBumped
-    SetTargetToWhoeverBumped
-    IfTargetIsAlive
-      DoNothing
-    Else
-      tmpargument = LATCHJUMP
-      PressLatchButton
-
-//-----------------------------------------------------------------------------
-// Deadly Strike skill
-IfScoredAHit
-  IfInvisible           // Only if hidden
-    tmpx = selflevel
-    tmpy = 14           // Level 16 or higher
-    IfXIsMoreThanY
-      SetTargetToWhoeverWasHit
-      IfTargetCanSeeInvisible
-        DoNothing               // No good if they can see us
-      Else
-        tmpargument = [UNDE]
-        IfTargetHasID
-          DoNothing             // Undead are immune to this
-        Else
-          tmpargument = selfdex > 6    // +1 damage for every 4 DEX
-          DamageTarget
-
-          // Sound and message
-          tmpargument = 8
-          tmpdistance = 3
-          tmpturn = RED
-          DrawBillboard
-          tmpargument = 13
-          PlaySound
-
-//-----------------------------------------------------------------------------
-// Gain new skills on level up
-IfLevelUp
-
-  // Listen skill
-  tmpx = selflevel
-  tmpy = 3            // Level 5
-  IfXIsEqualToY
-    SetTargetToSelf
-    tmpargument = [LIST]
-    tmpdistance = 1
-    GiveSkillToTarget
-
-//------------------------------------------------------------------------------
-// Activate master acrobacy if enough xp gained
-tmpargument = 0
-
-IfContentIs
-  SetTargetToSelf
-  tmpx = selflevel
-  tmpy = 6
-  IfXIsMoreThanY
-    SetOwnerToTarget
-    EnchantTarget     // Give the special bonus
-    tmpargument = 1
-    SetContent
 
 //-----------------------------------------------------------------------------
 // Go stealth mode when standing still

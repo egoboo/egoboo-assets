@@ -236,6 +236,12 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Lucky
 :[POOL] Athletics
 :[POOL] Quick_Strike
+:[POOL] Meditation
+:[POOL] Polearm_Mastery
+:[POOL] Sword_Mastery
+:[POOL] Bow_Mastery
+:[POOL] Crossbow_Mastery
+:[POOL] Double_Shot
 
 //-Notes------------------------------------------------------------------------
 // Money, items, skin, name, team, and position are all set at spawn time

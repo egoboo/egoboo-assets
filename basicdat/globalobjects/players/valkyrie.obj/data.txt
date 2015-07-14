@@ -194,10 +194,51 @@ Sound of Jump ( -1 for none )			: 1
 
 // Expansions
 :[DRES] 0		//Skin is dressy
-:[AWEP] 1		//Can use Advanced Weapons
-:[POIS] 1		//Can use poisoned weapons
-:[STAB] 1		//Can backstab
-:[CKUR] 1		//Can see kurses
+
+//Starting perks
+:[PERK] Weapon_Proficiency
+:[PERK] Backstab
+:[PERK] Sense_Kurses
+:[PERK] Poisonry
+:[PERK] Divine_Magic
+
+//Perks that this class can learn
+:[POOL] Toughness
+:[POOL] Acrobatic
+:[POOL] Master_Acrobat
+:[POOL] Sprint
+:[POOL] Mobility
+:[POOL] Brute
+:[POOL] Gigantism
+:[POOL] Defender
+:[POOL] Mobile_Defence
+:[POOL] Hold_The_Line
+:[POOL] Fast_Learner
+:[POOL] Literacy
+:[POOL] Read_G'nomish
+:[POOL] Dodge
+:[POOL] Stalwart
+:[POOL] Perfection
+:[POOL] Endurance
+:[POOL] Athletics
+:[POOL] Critical_Hit
+:[POOL] Lucky
+:[POOL] Deadly_Strike
+:[POOL] Sharpshooter
+:[POOL] Quick_Strike
+:[POOL] Mercenary
+:[POOL] Protection_from_Kurses
+:[POOL] Meditation
+:[POOL] Power
+:[POOL] Perceptive
+:[POOL] Sense_Undead
+:[POOL] Crusader
+:[POOL] Blunt_Weapons_Mastery
+:[POOL] Brutal_Strike
+:[POOL] Polearm_Mastery
+:[POOL] Grim_Reaper
+:[POOL] Axe_Mastery
+:[POOL] Bow_Mastery
 
 //-Notes------------------------------------------------------------------------
 // This is not the original paladin, it's modified by zefz for game balance and starter

@@ -217,3 +217,17 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Power
 :[POOL] Teleport_Mastery
 :[POOL] Disintegrate
+:[POOL] Spell_Mastery
+:[POOL] Mystic_Intellect    //Wizard's Special
+:[POOL] Meditation
+:[POOL] Bookworm
+:[POOL] Lore_Master
+:[POOL] Mercenary
+:[POOL] Sense_Kurses
+:[POOL] Protection_from_Kurses
+:[POOL] Darks_Arts_Mastery
+:[POOL] Magic_Attunement
+:[POOL] Blunt_Weapons_Mastery
+:[POOL] Brutal_Strike
+:[POOL] Crossbow_Mastery
+:[POOL] Improvised_Weapons

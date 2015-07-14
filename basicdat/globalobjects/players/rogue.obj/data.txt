@@ -196,8 +196,42 @@ Sound of Jump ( -1 for none )			: 1
 :[DRES] 3		//Armor 3 is cloth
 :[DRES] 1		//Armor 1 is cloth
 :[DRES] 0		//Armor 0 is cloth
-:[STAB] 1		//Backstab skill
-:[POIS] 1		//Poison Skill
+
+//Starting Perks
+:[PERK] Backstab
+:[PERK] Poisonry
+:[PERK] Acrobatic
+:[PERK] Traplore
+:[PERK] Perceptive
+
+//Perks that this class can learn (should be at least 22)
+:[POOL] Literacy
+:[POOL] Thaumaturgy
+:[POOL] Toughness
+:[POOL] Cartography
+:[POOL] Navigation
+:[POOL] Master_Acrobat
+:[POOL] Sprint
+:[POOL] Dash
+:[POOL] Mobility
+:[POOL] Fast_Learner
+:[POOL] Dodge
+:[POOL] Masterful_Dodge
+:[POOL] Read_G'nomish
+:[POOL] Wand_Mastery
+:[POOL] Athletics
+:[POOL] Critical_Hit
+:[POOL] Lucky
+:[POOL] Deadly_Strike
+:[POOL] Sharpshooter
+:[POOL] Quick_Strike
+:[POOL] Mercenary
+:[POOL] Danger_Sense
+:[POOL] Blunt_Weapons_Mastery
+:[POOL] Brutal_Strike
+:[POOL] Crossbow_Mastery
+:[POOL] Whip_Mastery
+:[POOL] Improvised_Weapons
 
 
 //-Notes------------------------------------------------------------------------

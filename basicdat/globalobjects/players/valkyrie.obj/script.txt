@@ -1,10 +1,10 @@
 // VALKYRIE
 //-------------------------------------------
 // Level       Abillity
-// 1            - Immune vs. Cold, Weapon Profiency, Poison Use, Backstab
+// 1            - Immune vs. Cold
 // 2            - Spear Mastery
 // 3            - n/a
-// 4            - Speed
+// 4            - n/a
 // 5            - n/a
 // 6            - n/a
 // 7            - Stealth (While standing still)
@@ -12,10 +12,10 @@
 // 9            - n/a
 // 10        - Sneak (Can move 1 step at the time while stealthing)
 // 11    - n/a
-// 12        - Hardy
+// 12        - n/a
 // 13    - n/a
 // 14    - Stalker (Can sneak while stealthing)
-// 15    - Critical Strike
+// 15    - n/a
 // 16    - n/a
 // 17    - n/a
 // 18    - Shade (Can move and jump while stealthing)
@@ -35,14 +35,6 @@ IfXIsMoreThanY
         DamageTarget
 
 //-----------------------------------------------------------------------------
-// Damage resist skill
-tmpx = selflevel
-tmpy = 10                   // need level 12
-IfXIsMoreThanY
-  tmpargument = selflevel * 24       // Reduce all damage by 1/10 per level
-  SetDamageThreshold
-
-//-----------------------------------------------------------------------------
 // Ultimate sacrifice skill
 IfKilled
   tmpx = selflevel
@@ -54,39 +46,6 @@ IfKilled
     tmpargument = 6
     SpawnExactParticle
     SendMessage
-
-//-----------------------------------------------------------------------------
-// Critical hit abillity
-tmpx = selflevel
-tmpy = 0             // Need level 2
-IfXIsMoreThanY
-  IfScoredAHit
-    SetTargetToWhoeverWasHit
-    tmpx = rand % 100
-    tmpy = selflevel          // 1% chance * (level-1)
-    IfXIsLessThanY
-      tmpargument = 128*selflevel + 128     // 0.5 extra damage per level
-      DamageTarget
-      tmpargument = 10
-      PlaySound
-      tmpargument = 7
-      SendMessage
-
-//-----------------------------------------------------------------------------
-// Speed abillity
-tmpx = selflevel
-tmpy = 5            // Need Level 7
-IfXIsMoreThanY
-  SetTargetToSelf
-  tmpx = targetmaxlife > 2
-  tmpx = targetmaxlife > 1 + tmpx          // 0.75 of max life
-  tmpy = targetlife
-  IfXIsMoreThanY              // Only if at 75% life or better
-    Run
-  Else
-    Run
-    tmpargument = 1+selflevel+100       // 1 percent bonus per level
-    SetSpeedPercent
 
 //-----------------------------------------------------------------------------
 // Harvest soul skill (gain mana when kill something)

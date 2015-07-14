@@ -154,6 +154,38 @@ Kursed chance  : 0
 Footfall sound : 0
 Jump sound     : 1
 
-:[READ] 1   //Reading
-:[POIS] 1   //Poison
-:[STAB] 1   //Backstab
+//Starting Perks
+:[PERK] Literacy
+:[PERK] Use_Technological_Items
+
+//Perks that this class can learn (should be at least 22)
+:[POOL] Toughness
+:[POOL] Sprint
+:[POOL] Mobility
+:[POOL] Critical_Hit
+:[POOL] Lucky
+:[POOL] Read_G'nomish
+:[POOL] Backstab
+:[POOL] Poisonry
+:[POOL] Endurance
+:[POOL] Quick_Strike
+:[POOL] Sharpshooter
+:[POOL] Athletics
+:[POOL] Jousting
+:[POOL] Perceptive
+:[POOL] Trap_Lore
+:[POOL] Stalwart
+:[POOL] Dodge
+:[POOL] Fast_Learner
+:[POOL] Acrobatic
+:[POOL] Cartography
+:[POOL] Navigation
+:[POOL] Jack_of_All_Trades
+:[POOL] Bookworm
+:[POOL] Lore_Master
+:[POOL] Blunt_Weapons_Mastery
+:[POOL] Brutal_Strike
+:[POOL] Weapon_Proficiency
+:[POOL] Grim_Reaper
+:[POOL] Crossbow_Mastery
+:[POOL] Improvised_Weapons

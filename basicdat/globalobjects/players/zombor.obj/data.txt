@@ -154,6 +154,40 @@ Kursed chance  : 0
 Footfall sound : 6
 Jump sound     : 7
 
-//Expansions
-:[AWEP] 1              //Advanced weapon profiency
-:[DARK] 3               //Level 3 darkvision
+//Starting perks
+:[PERK] Weapon_Proficiency
+:[PERK] Night_Vision
+
+//Perks that this class can learn
+:[POOL] Toughness
+:[POOL] Sprint
+:[POOL] Mobility
+:[POOL] Brute
+:[POOL] Gigantism
+:[POOL] Defender
+:[POOL] Mobile_Defence
+:[POOL] Hold_The_Line
+:[POOL] Stalwart
+:[POOL] Endurance
+:[POOL] Athletics
+:[POOL] Critical_Hit
+:[POOL] Lucky
+:[POOL] Deadly_Strike
+:[POOL] Quick_Strike
+:[POOL] Blunt_Weapons_Mastery
+:[POOL] Brutal_Strike
+:[POOL] Polearm_Mastery
+:[POOL] Axe_Mastery
+:[POOL] Sword_Mastery
+:[POOL] Grim_Reaper
+:[POOL] Poisonry
+:[POOL] Sense_Undead
+:[POOL] Thaumaturgy
+:[POOL] Wand_Mastery
+:[POOL] Backstab
+:[POOL] Sense_Kurses
+:[POOL] Protection_from_Kurses
+:[POOL] Bow_Mastery
+:[POOL] Crossbow_Mastery
+:[POOL] Wolverine
+:[POOL] Improvised_Weapons

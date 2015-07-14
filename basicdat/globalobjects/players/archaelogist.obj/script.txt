@@ -1,64 +1,3 @@
-// ARCHEOLOGIST
-//-------------------------------------------
-// Level       Abillity
-// 1            Acrobacy, Use Technological Items
-// 2            n/a
-// 3            Whip Mastery
-// 4            n/a
-// 5            n/a
-// 6            Lore Mastery
-// 7         n/a
-// 8         n/a
-// 9         Lucky
-// 10        n/a
-// 11        n/a
-// 12        Cartography
-// 13        n/a
-// 14        n/a
-// 15        Danger Sense
-//-----------------------------------------------------------------------------
-// Danger sense skill
-tmpx = selflevel
-tmpy = 13          // Need level 15
-IfXIsMoreThanY
-  SetTargetToSelf           // Make sure the enemy is correct
-  tmpargument = [NONE]      // All enemies
-  AddBlipAllEnemies         // Reveal 'em all
-
-//-----------------------------------------------------------------------------
-// Carography skill
-tmpx = selflevel
-tmpy = 10            // Need level 12
-IfXIsMoreThanY
-  ShowMap
-  ShowYouAreHere
-
-//-----------------------------------------------------------------------------
-// Identify special abillity
-SetTargetToSelf
-
-IfTargetIsAlive
-  tmpx = targetlevel
-  tmpy = 4                  // Only at level 6
-  IfXIsMoreThanY
-    SetTargetToTargetLeftHand
-      IdentifyTarget
-    SetTargetToTargetRightHand
-      IdentifyTarget
-
-//-----------------------------------------------------------------------------
-// Whip mastery skill
-tmpx = selflevel
-tmpy = 1            // Need level 3
-IfXIsMoreThanY
-  IfScoredAHit
-    SetTargetToLastItemUsed
-      tmpargument = [WHIP]
-      IfTargetHasID
-        SetTargetToWhoeverWasHit
-        tmpargument = 512
-        DamageTarget
-
 //-----------------------------------------------------------------------------
 // Snake phobia =)
 IfStateIs0
@@ -101,19 +40,6 @@ IfBumped
 IfCleanedUp
   tmpargument = 2
   PlayFullSound
-
-//-----------------------------------------------------------------------------
-// Invoke Lucky skill if enough xp gained
-SetTargetToSelf
-tmpx = selflevel
-tmpy = 7                // Need level 9
-IfXIsMoreThanY
-  tmpargument = 0
-  IfContentIs
-    SetOwnerToTarget
-    EnchantTarget        // Give the special bonus
-    tmpargument = 1
-    SetContent
 
 //------------------------------------------------------------------------------
 // Yell at player
@@ -165,11 +91,6 @@ IfKilled
   // Make the character body
   tmpargument = 45
   SetBumpHeight
-
-  // Redo the Lucky skill when respawned
-  UndoEnchant
-  tmpargument = 0
-  SetContent
 
 //------------------------------------------------------------------------------
 // For helper AIs

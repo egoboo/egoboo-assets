@@ -2,9 +2,9 @@
 // LEVEL   ABILLITY
 // 1     - Alchemy
 // 2     - n/a
-// 3     - Magical Ampitude
+// 3     - n/a
 // 4     - n/a
-// 5     - Teleport Mastery
+// 5     - n/a
 // 6     - n/a
 // 7     - n/a
 // 8     - Elemental Staff
@@ -77,30 +77,6 @@ IfTargetIsAlive
     tmpargument = [FLAS]
     IfTargetHasID
       IdentifyTarget        // And flasks
-
-//-----------------------------------------------------------------------------
-// Magical Ampitude
-tmpx = selflevel
-tmpy = 1            // Need level 3
-IfXIsMoreThanY
-SetTargetToSelf
-
-IfTargetIsAlive
-  SetTargetToTargetLeftHand    // Check left hand first
-    tmpargument = [WAND]
-    IfTargetHasID
-      IdentifyTarget        // Identify wands
-      SetTargetToSelf
-    tmpargument = [SCRO]
-    IfTargetHasID
-      IdentifyTarget        // And scrolls
-  SetTargetToTargetRightHand    // Repeat with other hand
-    tmpargument = [WAND]
-    IfTargetHasID
-      IdentifyTarget        // Identify wands
-    tmpargument = [SCRO]
-    IfTargetHasID
-      IdentifyTarget        // And scrolls
 
 //-----------------------------------------------------------------------------
 // ZZ> Gong sound

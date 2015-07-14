@@ -137,7 +137,7 @@ Stopped by     : 48
 Skin 0 name    : an_Mystic's_dress
 Skin 1 name    : some_Enchanted_Robes
 Skin 2 name    : a_Oracle_Suit
-Skin 3 name    : an_Bikini
+Skin 3 name    : a_Bikini
 Skin 0 cost    : 50
 Skin 1 cost    : 550
 Skin 2 cost    : 700

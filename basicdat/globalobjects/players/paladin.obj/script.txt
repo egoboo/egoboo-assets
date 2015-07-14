@@ -1,19 +1,19 @@
 // PALADIN
 //-------------------------------------------
 // Level       Abillity
-// 1            Weapon Profiency, Jousting
-// 2            Divine Magic
+// 1            n/a
+// 2            n/a
 // 3            n/a
 // 4            Holy Smite
 // 5            n/a
 // 6            n/a
-// 7            Crusader
+// 7            n/a
 // 8            n/a
 // 9            n/a
 // 10        Halo
 // 11        n/a
 // 12        n/a
-// 13        Sense Undead
+// 13        n/a
 // 14        n/a
 // 15        n/a
 // 16        Ultimate Sacrifice
@@ -38,15 +38,6 @@ IfKilled
     SendMessage
 
 //-----------------------------------------------------------------------------
-// Undead Sense skill
-tmpx = selflevel
-tmpy = 11            // need level 13
-IfXIsMoreThanY
-  SetTargetToSelf           // Make sure it's the enemies of self
-  tmpargument = [UNDE]      // Only undead
-  AddBlipAllEnemies        // Show em'
-
-//-----------------------------------------------------------------------------
 // Halo abillity
 tmpx = selflevel
 tmpy = 8            // need level 10
@@ -57,18 +48,6 @@ IfXIsMoreThanY
   tmpargument = 5
   SpawnParticle
   SpawnParticle
-
-//------------------------------------------------------------------------------
-// Invoke Crusader if enough xp gained
-IfStateIs0
-  SetTargetToSelf
-  tmpx = selflevel
-  tmpy = 5          // Need level 7
-  IfXIsMoreThanY
-    SetOwnerToTarget
-    EnchantTarget     // Give the special bonus
-    tmpargument = 1
-    SetState
 
 //-----------------------------------------------------------------------------
 // Holy Smite abillity
@@ -139,11 +118,6 @@ IfKilled
   // Make the character body
   tmpargument = 45
   SetBumpHeight
-
-  // Redo Crusader skill
-  UndoEnchant
-  tmpargument = 0
-  SetState
 
 //------------------------------------------------------------------------------
 // ZZ> For helper AIs

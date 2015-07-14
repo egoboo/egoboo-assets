@@ -4,7 +4,7 @@
 // 2            n/a
 // 3            Immune vs. Banishment
 // 4            n/a
-// 5            Immune vs. Kurses
+// 5            n/a
 // 6            n/a
 // 7            Life Steal attack
 // 8            n/a
@@ -37,16 +37,6 @@ IfScoredAHit
       SetTargetToWhoeverWasHit
       tmpargument = 1
       DazeTarget
-
-//-----------------------------------------------------------------------------
-// Immune vs. kurses abillity
-tmpx = selflevel
-tmpy = 3
-
-// Gain abillity at 5th level
-IfXIsMoreThanY
-  SetTargetToSelf
-  UnkurseTargetInventory
 
 //------------------------------------------------------------------------------
 // Yell at player

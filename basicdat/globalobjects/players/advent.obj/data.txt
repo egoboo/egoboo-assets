@@ -237,6 +237,20 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Sharpshooter
 :[POOL] Quick_Strike
 :[POOL] Teleport_Mastery
+:[POOL] Mercenary
+:[POOL] Meditation
+:[POOL] Blunt_Weapons_Mastery
+:[POOL] Brutal_Strike
+:[POOL] Polearm_Mastery
+:[POOL] Axe_Mastery
+:[POOL] Sword_Mastery
+:[POOL] Bow_Mastery
+:[POOL] Double_Shot
+:[POOL] Crossbow_Mastery
+:[POOL] Whip_Mastery
+:[POOL] Bookworm
+:[POOL] Lore_Master
+:[POOL] Improvised_Weapons
 
 //-Notes------------------------------------------------------------------------
 // Money, items, skin, name, team, and position are all set at spawn time

@@ -1,38 +1,22 @@
 // TOURIST
 //-------------------------------------------
 // Level       Abillity
-// 1            Use Technological Items, Use Poison, Backstab
-// 2            Mobility
+// 1            n/a
+// 2            n/a
 // 3            n/a
 // 4            n/a
-// 5            Improvised Weapons
+// 5            n/a
 // 6            n/a
 // 7     n/a
-// 8     Cartography
+// 8     Too silly to die
 // 9     n/a
 // 10    n/a
-// 11    Lucky
+// 11    n/a
 // 12    n/a
 // 13    n/a
-// 14    Backpacker
+// 14    n/a
 // 15    n/a
 //-----------------------------------------------------------------------------
-// Carography skill
-IfLevelUp
-  tmpx = selflevel
-  tmpy = 6            // Need level 8
-  IfXIsMoreThanY
-    ShowMap
-    ShowYouAreHere
-
-IfSpawned
-  tmpx = selflevel
-  tmpy = 6            // Need level 8
-  IfXIsMoreThanY
-    ShowMap
-    ShowYouAreHere
-
-//-------------------------------------------
 // To Silly To Die skill
 IfKilled
   tmpx = selflevel
@@ -47,19 +31,6 @@ IfKilled
       SendMessage
       tmpargument = 11
       PlayFullSound
-
-//-----------------------------------------------------------------------------
-// Invoke Lucky skill if enough xp gained
-tmpx = selflevel
-tmpy = 7                // Need level 9
-IfXIsMoreThanY
-  tmpargument = 0
-  IfContentIs
-    SetTargetToSelf
-    SetOwnerToTarget
-    EnchantTarget        // Give the special bonus
-    tmpargument = 1
-    SetContent
 
 //-----------------------------------------------------------------------------
 // Improvised weapons skill
@@ -88,21 +59,6 @@ IfXIsMoreThanY
         SetTargetToWhoeverWasHit
         tmpargument = 60*selflevel    // 0.25 damage bonus per level
         DamageTarget
-
-//-----------------------------------------------------------------------------
-// Auto jump over corpses (Mobility skill)
-tmpx = selflevel
-tmpy = 1          // Need level 2
-IfXIsLessThanY
-  DoNothing
-Else
-  IfBumped
-    SetTargetToWhoeverBumped
-    IfTargetIsAlive
-      DoNothing
-    Else
-      tmpargument = LATCHJUMP
-      PressLatchButton
 
 //-----------------------------------------------------------------------------
 // Gong sound

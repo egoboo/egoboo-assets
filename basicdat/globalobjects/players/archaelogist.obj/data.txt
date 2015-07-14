@@ -158,5 +158,43 @@ Jump sound     : 1
 :[DRES] 1	//Armor is dressy
 :[DRES] 2	//Armor is dressy
 :[DRES] 3	//Armor is dressy
-:[DISA] 1	//Find and disarm traps
-:[READ] 1	//Character is literate
+
+//Starting Perks
+:[PERK] Traplore
+:[PERK] Perceptive
+:[PERK] Literacy
+:[PERK] Read_G'nomish
+:[PERK] Acrobacy
+:[PERK] Use_Technological_Items
+
+//Perks that this class can learn (should be at least 22)
+:[POOL] Thaumaturgy
+:[POOL] Toughness
+:[POOL] Cartography
+:[POOL] Navigation
+:[POOL] Master_Acrobat
+:[POOL] Sprint
+:[POOL] Dash
+:[POOL] Mobility
+:[POOL] Fast_Learner
+:[POOL] Dodge
+:[POOL] Wand_Mastery
+:[POOL] Athletics
+:[POOL] Critical_Hit
+:[POOL] Lucky
+:[POOL] Sharpshooter
+:[POOL] Crack_Shot
+:[POOL] Quick_Strike
+:[POOL] Mercenary
+:[POOL] Danger_Sense
+:[POOL] Crossbow_Mastery
+:[POOL] Whip_Mastery
+:[POOL] Poisonry
+:[POOL] Weapon_Proficiency
+:[POOL] Endurance
+:[POOL] Bookworm
+:[POOL] Perfection
+:[POOL] Sense_Kurses
+:[POOL] Protection_from_Kurses
+:[POOL] Lore_Master
+:[POOL] Improvised_Weapons

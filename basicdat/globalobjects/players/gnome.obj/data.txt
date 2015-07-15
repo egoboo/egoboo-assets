@@ -221,7 +221,7 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Athletics
 :[POOL] Thaumaturgy
 :[POOL] Wand_Mastery
-:[POOL] Crack_Shot
+:[POOL] Crackshot
 :[POOL] Ancient_Blud    //G'nome special
 :[POOL] Critical_Hit
 :[POOL] Lucky
@@ -231,7 +231,8 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Bookworm
 :[POOL] Lore_Master
 :[POOL] Improvised_Weapons
-
+:[POOL] Brute
+:[POOL] Berserker
 
 //-Notes------------------------------------------------------------------------
 // Money, items, skin, name, team, and position are all set at spawn time

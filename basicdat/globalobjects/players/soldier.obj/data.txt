@@ -205,11 +205,12 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Sprint
 :[POOL] Mobility
 :[POOL] Brute
+:[POOL] Berserker
 :[POOL] Soldiers_Fortitude  //Soldier's special
 :[POOL] Gigantism
 :[POOL] Defender
 :[POOL] Mobile_Defence
-:[POOL] Hold_The_Line
+:[POOL] Hold_the_Line
 :[POOL] Fast_Learner
 :[POOL] Literacy
 :[POOL] Read_G'nomish

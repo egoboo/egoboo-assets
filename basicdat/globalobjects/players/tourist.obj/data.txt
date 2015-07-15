@@ -189,3 +189,4 @@ Jump sound     : 1
 :[POOL] Grim_Reaper
 :[POOL] Crossbow_Mastery
 :[POOL] Improvised_Weapons
+:[POOL] Crackshot

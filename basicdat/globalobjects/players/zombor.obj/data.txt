@@ -163,6 +163,7 @@ Jump sound     : 7
 :[POOL] Sprint
 :[POOL] Mobility
 :[POOL] Brute
+:[POOL] Berserker
 :[POOL] Gigantism
 :[POOL] Defender
 :[POOL] Mobile_Defence

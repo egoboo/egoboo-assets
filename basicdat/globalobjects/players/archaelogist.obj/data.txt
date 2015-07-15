@@ -183,7 +183,7 @@ Jump sound     : 1
 :[POOL] Critical_Hit
 :[POOL] Lucky
 :[POOL] Sharpshooter
-:[POOL] Crack_Shot
+:[POOL] Crackshot
 :[POOL] Quick_Strike
 :[POOL] Mercenary
 :[POOL] Danger_Sense

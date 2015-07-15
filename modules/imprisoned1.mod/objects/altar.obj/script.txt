@@ -18,8 +18,6 @@ IfTimeOut
     tmpargument = 380
     SetTime
 
-    DebugMessage
-
     // assume its the wrong item
     tmpturn = 10
 
@@ -106,6 +104,7 @@ IfTimeOut
     tmpdistance = BLAHENEMIES + BLAHFRIENDS + BLAHPLAYERS
     tmpargument = [NONE]
     SetTargetToWideBlahID                 // aka SetTargetToWidePlayer
+    
       IfTargetIsAPlayer
         tmpargument = 350
         SetTime

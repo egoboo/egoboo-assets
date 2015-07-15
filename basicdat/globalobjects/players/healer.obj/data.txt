@@ -222,6 +222,7 @@ Sound of Jump ( -1 for none )			: 10
 :[POOL] Lore_Master
 :[POOL] Blunt_Weapons_Mastery
 :[POOL] Brutal_Strike
+:[POOL] Guardian_Angel
 
 
 //-Notes------------------------------------------------------------------------

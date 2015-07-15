@@ -206,4 +206,4 @@ monsterdrop:   NONE    58  35.0   11.0   1.0   N    0   0  19   46   0   F   F  
 
 monsterdrop:   NONE    58  57.5   40.5   1.0   N    0   0  22   54   0   F   F   E
 chest:   NONE    36  44.5   30.5   0.0   N    0   0  0   0   0   F   F   N       //Random armor
-  %RANDOM_ARMOR:   NONE    -1  0.0   0.0   0.0   I    0   4  0   2   0   F   F   N
+  %RANDOM_ARMOR:   NONE    -1  0.0   0.0   0.0   I    0   ?  0   2   0   F   F   N

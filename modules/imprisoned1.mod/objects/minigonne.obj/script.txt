@@ -119,7 +119,7 @@ IfDropped
   tmpargument = 0
   SetState
 
-// Need 17 strength to carry
+// Need 19 strength to carry
 IfGrabbed
   SetTargetToWhoeverIsHolding
   tmpx = 256*19

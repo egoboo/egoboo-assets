@@ -78,32 +78,18 @@ IfTimeOut
   SetContent
 
 //-------------------------------------------
-// Guardian angel special skill
-// and Last boon skill
+// Last boon skill
 IfKilled
   tmpx = selflevel
-  tmpy = 8            // Need level 10
+  tmpy = 14            // Need level 16
   IfXIsMoreThanY
-    tmpx = rand % 100
-    tmpy = selfint > 9          // % chance equal to int/2
-    IfXIsLessThanY
-      SetTargetToSelf
-      RespawnTarget
-      tmpargument = 10
-      SendMessage
-      tmpargument = 12
-      PlayFullSound
-    Else
-      tmpx = selflevel
-      tmpy = 14            // Need level 16
-      IfXIsMoreThanY
-        tmpargument = 5
-        tmpx = selfx
-        tmpy = selfy
-        tmpdistance = selfz
-        SpawnExactParticle
-        tmpargument = 11
-        SendMessage
+    tmpargument = 5
+    tmpx = selfx
+    tmpy = selfy
+    tmpdistance = selfz
+    SpawnExactParticle
+    tmpargument = 11
+    SendMessage
 
 //-------------------------------------------
 // Gong sound

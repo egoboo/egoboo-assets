@@ -190,3 +190,4 @@ Jump sound     : 1
 :[POOL] Crossbow_Mastery
 :[POOL] Improvised_Weapons
 :[POOL] Crackshot
+:[POOL] Too_Silly_to_Die    //Tourist special

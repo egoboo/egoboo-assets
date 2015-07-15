@@ -227,6 +227,7 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Brutal_Strike
 :[POOL] Polearm_Mastery
 :[POOL] Sword_Mastery
+:[POOL] Rally
 
 //-Notes------------------------------------------------------------------------
 // This is not the original paladin, it's modified by zefz for game balance and starter

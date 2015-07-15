@@ -377,7 +377,7 @@ IfOverWater
 
   // Slowly die, lose about 1 hp per second
   SetTargetToSelf
-  tmpargument = 8
+  tmpargument = 40 //+32 to override Life Regeneration
   DamageTarget
 
   tmpargument = 50

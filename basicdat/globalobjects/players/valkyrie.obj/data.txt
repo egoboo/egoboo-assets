@@ -240,6 +240,7 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Grim_Reaper
 :[POOL] Axe_Mastery
 :[POOL] Bow_Mastery
+:[POOL] Rally
 
 //-Notes------------------------------------------------------------------------
 // This is not the original paladin, it's modified by zefz for game balance and starter

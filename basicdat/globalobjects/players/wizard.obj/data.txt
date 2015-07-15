@@ -225,7 +225,7 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Mercenary
 :[POOL] Sense_Kurses
 :[POOL] Protection_from_Kurses
-:[POOL] Darks_Arts_Mastery
+:[POOL] Dark_Arts_Mastery
 :[POOL] Magic_Attunement
 :[POOL] Blunt_Weapons_Mastery
 :[POOL] Brutal_Strike

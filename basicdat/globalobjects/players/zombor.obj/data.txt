@@ -192,3 +192,5 @@ Jump sound     : 7
 :[POOL] Crossbow_Mastery
 :[POOL] Wolverine
 :[POOL] Improvised_Weapons
+:[POOL] Troll_Blood
+:[POOL] Pyromaniac

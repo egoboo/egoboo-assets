@@ -66,7 +66,7 @@ Base defense increase ( -50 to 50 )		: 0
 Maximum mana increase ( -3.0 to 3.0 )		: 0.0
 Maximum life increase ( -3.0 to 3.0 )		: 4.0
 Strength boost ( -3.0 to 3.0 )			: 8.0
-Wisdom boost ( -3.0 to 3.0 )			: 8.0
+Wisdom boost ( -3.0 to 3.0 )			: 0.0
 Intelligence boost ( -3.0 to 3.0 )		: 8.0
 Dexterity boost ( -3.0 to 3.0 )			: 8.0
 

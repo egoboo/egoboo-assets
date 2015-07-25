@@ -34,7 +34,7 @@ SLASH damage modifier ( InversionTFC, Shift )	: F F 0
 CRUSH damage modifier ( InversionTFC, Shift )	: F F 0
 POKE  damage modifier ( InversionTFC, Shift )	: F F 0
 HOLY  damage modifier ( InversionTFC, Shift )	: F T 0
-EVIL  damage modifier ( InversionTFC, Shift )	: T F -50
+EVIL  damage modifier ( InversionTFC, Shift )	: T F -20
 FIRE  damage modifier ( InversionTFC, Shift )	: T I 0
 ICE   damage modifier ( InversionTFC, Shift )	: T I 0
 ZAP   damage modifier ( InversionTFC, Shift )	: T I 0

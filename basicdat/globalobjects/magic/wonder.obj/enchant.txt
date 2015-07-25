@@ -30,9 +30,9 @@ Damage type ( CRUSH, POKE, SLASH, etc. )	: F CRUSH
 Number of jumps ( 0 to 2 )			: T 2
 Life bar color ( 0 to 5, 1 is red )		: T 4
 Mana bar color ( 0 to 5, 5 is purple )		: F 4
-SLASH damage modifier ( InversionTFC, Shift )	: T T 25
-CRUSH damage modifier ( InversionTFC, Shift )	: T T 25
-POKE  damage modifier ( InversionTFC, Shift )	: T T 25
+SLASH damage modifier ( InversionTFC, Shift )	: T T 5
+CRUSH damage modifier ( InversionTFC, Shift )	: T T 5
+POKE  damage modifier ( InversionTFC, Shift )	: T T 5
 HOLY  damage modifier ( InversionTFC, Shift )	: T T 0
 EVIL  damage modifier ( InversionTFC, Shift )	: T I 0
 FIRE  damage modifier ( InversionTFC, Shift )	: T I 0

@@ -30,11 +30,11 @@ Damage type ( CRUSH, POKE, SLASH, etc. )	: F CRUSH
 Number of jumps ( 0 to 2 )			: T 2
 Life bar color ( 0 to 5, 1 is red )		: T 4
 Mana bar color ( 0 to 5, 5 is purple )		: F 4
-SLASH damage modifier ( InversionTFC, Shift )	: T F 50
-CRUSH damage modifier ( InversionTFC, Shift )	: T F 50
-POKE  damage modifier ( InversionTFC, Shift )	: T F 50
-HOLY  damage modifier ( InversionTFC, Shift )	: T T 50
-EVIL  damage modifier ( InversionTFC, Shift )	: T F 50
+SLASH damage modifier ( InversionTFC, Shift )	: T F 10
+CRUSH damage modifier ( InversionTFC, Shift )	: T F 10
+POKE  damage modifier ( InversionTFC, Shift )	: T F 10
+HOLY  damage modifier ( InversionTFC, Shift )	: T T 10
+EVIL  damage modifier ( InversionTFC, Shift )	: T F 10
 FIRE  damage modifier ( InversionTFC, Shift )	: F F 1
 ICE   damage modifier ( InversionTFC, Shift )	: F F 1
 ZAP   damage modifier ( InversionTFC, Shift )	: F F 1
@@ -46,7 +46,7 @@ Fly to height ( 0 to 255, Won't affect innate )	: F 40
 Walk on water ( TRUE or FALSE, Not on innate )	: T TRUE
 Can see invisible ( TRUE or FALSE )		: T TRUE
 Missile treatment ( NORMAL, DEFLECT, REFLECT )	: T DEFLECT
-Cost for each missile treated ( 0.0 to 1.0 )	: T 0.5
+Cost for each missile treated ( 0.0 to 1.0 )	: T 0.3
 Morph target ( TRUE )				: F TRUE
 Target may now channel life ( TRUE )		: T TRUE
 
@@ -66,7 +66,7 @@ Base defense increase ( -50 to 50 )		: 50
 Maximum mana increase ( -3.0 to 3.0 )		: 5.0
 Maximum life increase ( -3.0 to 3.0 )		: 5.0
 Strength boost ( -3.0 to 3.0 )			: 10.0
-Wisdom boost ( -3.0 to 3.0 )			: 10.0
+Wisdom boost ( -3.0 to 3.0 )			: 0.0
 Intelligence boost ( -3.0 to 3.0 )		: 10.0
 Dexterity boost ( -3.0 to 3.0 )			: 10.0
 

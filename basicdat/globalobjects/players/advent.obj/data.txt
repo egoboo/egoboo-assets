@@ -251,6 +251,7 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Bookworm
 :[POOL] Lore_Master
 :[POOL] Improvised_Weapons
+:[POOL] Rosemary
 
 //-Notes------------------------------------------------------------------------
 // Money, items, skin, name, team, and position are all set at spawn time

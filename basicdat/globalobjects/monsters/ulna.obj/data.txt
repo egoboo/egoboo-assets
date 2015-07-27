@@ -156,5 +156,5 @@ Jump sound     : 22
 
 //Expansions
 :[AWEP] 1             //Advanced weapons profiency
-:[STUK] 0               //No arrows and such get stuck
+:[STUK] 0             //No arrows and such get stuck
 :[DARK] 10            //Level 10 darkvision

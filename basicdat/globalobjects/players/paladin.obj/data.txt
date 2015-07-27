@@ -208,7 +208,7 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Gigantism
 :[POOL] Defender
 :[POOL] Mobile_Defence
-:[POOL] Hold_The_Line
+:[POOL] Hold_the_Line
 :[POOL] Fast_Learner
 :[POOL] Read_G'nomish
 :[POOL] Stalwart
@@ -229,6 +229,7 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Sword_Mastery
 :[POOL] Rally
 :[POOL] Guardian_Angel
+:[POOL] Rosemary
 
 //-Notes------------------------------------------------------------------------
 // This is not the original paladin, it's modified by zefz for game balance and starter

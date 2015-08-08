@@ -243,6 +243,10 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Rally
 :[POOL] Troll_Blood
 :[POOL] Rosemary
+:[POOL] Stealth
+:[POOL] Stalker
+:[POOL] Shade
+:[POOL] Camouflage
 
 //-Notes------------------------------------------------------------------------
 // This is not the original paladin, it's modified by zefz for game balance and starter

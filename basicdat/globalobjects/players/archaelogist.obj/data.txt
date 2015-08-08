@@ -198,3 +198,7 @@ Jump sound     : 1
 :[POOL] Protection_from_Kurses
 :[POOL] Lore_Master
 :[POOL] Improvised_Weapons
+:[POOL] Stealth
+:[POOL] Stalker
+:[POOL] Shade
+:[POOL] Camouflage

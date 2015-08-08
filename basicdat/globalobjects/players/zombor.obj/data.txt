@@ -194,3 +194,5 @@ Jump sound     : 7
 :[POOL] Improvised_Weapons
 :[POOL] Troll_Blood
 :[POOL] Pyromaniac
+:[POOL] Stealth
+:[POOL] Stalker

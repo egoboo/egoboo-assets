@@ -2,38 +2,25 @@
 //-------------------------------------------
 // Level       Abillity
 // 1            - Immune vs. Cold
-// 2            - Spear Mastery
+// 2            - n/a
 // 3            - n/a
 // 4            - n/a
 // 5            - n/a
 // 6            - n/a
-// 7            - Stealth (While standing still)
+// 7            - n/a
 // 8     - n/a
 // 9            - n/a
-// 10        - Sneak (Can move 1 step at the time while stealthing)
+// 10        - n/a
 // 11    - n/a
 // 12        - n/a
 // 13    - n/a
-// 14    - Stalker (Can sneak while stealthing)
+// 14    - n/a
 // 15    - n/a
 // 16    - n/a
 // 17    - n/a
-// 18    - Shade (Can move and jump while stealthing)
+// 18    - n/a
 // 19    - n/a
 // 20    - Ultimate Sacrifice
-//-----------------------------------------------------------------------------
-// Spear mastery skill
-tmpx = selflevel
-tmpy = 0            // Need level 1
-IfXIsMoreThanY
-  IfScoredAHit
-    SetTargetToLastItemUsed
-      tmpargument = [SPEA]
-      IfTargetHasID
-        SetTargetToWhoeverWasHit
-        tmpargument = 512
-        DamageTarget
-
 //-----------------------------------------------------------------------------
 // Ultimate sacrifice skill
 IfKilled
@@ -56,100 +43,6 @@ IfScoredAHit
     tmpx = selflevel*52             // Gain 1 extra mana per 5 levels
     tmpargument = 384 + tmpx       // gain 1.5 mana
     PumpTarget
-
-//-----------------------------------------------------------------------------
-// Go stealth mode when standing still
-// State 0 = Ready
-// State 1 = Cooldown
-// State 2 = Going stealth stealth
-// State 3 = In stealth mode
-
-tmpx = selflevel
-tmpy = 5           // Need to be level 7 at least
-IfXIsMoreThanY
-  // If tmpdistance > 0 then reset cloak timer
-  tmpdistance = 0
-
-  // Stuff that makes us visible
-  SetTargetToSelf
-  IfBumped
-    tmpdistance = 300     // 6 seconds
-  IfAttacked
-    tmpdistance = 300     // 6 seconds
-  IfTargetIsAttacking
-    tmpdistance = 150     // 3 seconds
-  IfTargetIsDefending
-    tmpdistance = 100     // 2 seconds
-
-  // Is the player not moving to fast?
-  SetTargetToSelf
-
-  IfStateIs3                // Allow movement if already stealthed
-    tmpy = selflevel-6      // Max speed determined by level
-  Else
-    tmpy = 1                // When not stealthed, stand still to go stealth
-  tmpx = targetspeedx + targetspeedy + targetspeedz
-  IfXIsLessThanY
-    SetTargetToNearbyEnemy  // Can't hide in plain sight
-      tmpx = selflevel*50 + targetdistance        // Level increases
-    Else
-      tmpx = 551
-    tmpy = 550
-    IfXIsMoreThanY
-      IfInvisible
-        DoNothing           // No need to hide if already invisisble
-      Else
-        IfStateIs0
-          tmpargument = 2
-          SetState
-          tmpargument = 50
-          SetTime
-  Else                    // Character is moving, reset timer
-    tmpdistance = 75     // 1,5 seconds
-
-  // Handle and reset cooldown counter for stealth
-  IfTimeOut
-    IfStateIs1
-      tmpargument = 0
-      SetState
-    IfStateIs2
-      tmpargument = 0
-      SetAlpha
-      tmpargument = 14
-      PlaySound
-      tmpargument = 3
-      SetState
-
-    // Check sneak abillity to see if we are detected
-    IfStateIs3
-      tmpargument = 25            // Check every 1 second
-      SetTime
-      SetTargetToNearestEnemy
-        tmpturn = selflevel*50
-        tmpx = targetdistance
-        tmpy = 1000 - tmpturn
-        IfXIsLessThanY
-          tmpturn = targetdistance > 7          // Distance increases chance
-          tmpx = targetint > 9
-          tmpx = tmpx - tmpturn
-          tmpx = rand % 40 + tmpx
-          tmpy = selfdex > 10
-          tmpy = rand % 40 + tmpy
-          IfXIsMoreThanY                        // We were detected!
-            tmpdistance = 300               // 6 seconds
-
-  // Disable stealth and reset timer if tmpdistance is bigger than 0
-  tmpturn = 0
-  IfDistanceIsMoreThanTurn
-    tmpargument = tmpdistance
-    SetTime
-    IfStateIs3
-      tmpargument = 255
-      SetAlpha
-      tmpargument = 15
-      PlaySound
-    tmpargument = 1
-    SetState
 
 //-----------------------------------------------------------------------------
 IfHitGround

@@ -252,6 +252,10 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Lore_Master
 :[POOL] Improvised_Weapons
 :[POOL] Rosemary
+:[POOL] Stealth
+:[POOL] Stalker
+:[POOL] Shade
+:[POOL] Camouflage
 
 //-Notes------------------------------------------------------------------------
 // Money, items, skin, name, team, and position are all set at spawn time

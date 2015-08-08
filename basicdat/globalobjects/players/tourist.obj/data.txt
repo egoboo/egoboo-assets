@@ -191,3 +191,4 @@ Jump sound     : 1
 :[POOL] Improvised_Weapons
 :[POOL] Crackshot
 :[POOL] Too_Silly_to_Die    //Tourist special
+:[POOL] Stealth

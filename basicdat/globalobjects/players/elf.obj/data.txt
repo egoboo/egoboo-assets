@@ -201,6 +201,7 @@ Sound of Jump ( -1 for none )			: 1
 :[PERK] Literacy
 :[PERK] Weapon_Proficiency
 :[PERK] Thaumaturgy
+:[PERK] Stealth
 
 //Perks that this class can learn (should be at least 22)
 :[POOL] Cartography
@@ -243,6 +244,9 @@ Sound of Jump ( -1 for none )			: 1
 :[POOL] Crossbow_Mastery
 :[POOL] Double_Shot
 :[POOL] Pyromaniac
+:[POOL] Stalker
+:[POOL] Shade
+:[POOL] Camouflage
 
 //-Notes------------------------------------------------------------------------
 // Money, items, skin, name, team, and position are all set at spawn time

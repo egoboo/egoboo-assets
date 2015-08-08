@@ -153,3 +153,5 @@ Can see invisi : TRUE
 Kursed chance  : 0
 Footfall sound : -1
 Jump sound     : -1
+
+:[MODL] SB   //Bump size overrides model

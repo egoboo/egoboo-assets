@@ -18,7 +18,7 @@ IfTimeOut
   IfStateIs0
     SetTargetToNearbyEnemy
       tmpx = targetdistance
-      tmpy = 140
+      tmpy = 220
       IfXIsLessThanY
         tmpargument = 1
         SetState
@@ -37,7 +37,9 @@ IfTimeOut
 
   // Running towards the portal
   IfStateIs1
-    IfAtLastWaypoint
+    tmpx = gotodistance
+    tmpy = 128
+    IfXIsLessThanY
       tmpargument = 3
       PlaySound
       tmpx = 24*128
@@ -72,7 +74,7 @@ IfTimeOut
   // Running towards the final portal
   IfStateIs3
     tmpx = gotodistance
-    tmpy = 25
+    tmpy = 128
     IfXIsLessThanY
       tmpargument = 3
       PlaySound

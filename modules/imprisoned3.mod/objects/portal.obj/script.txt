@@ -172,7 +172,7 @@ IfXIsMoreThanY
     tmpturn = rand
     TeleportTarget
   Else
-    tmpargument = 0     // No players left
+    tmpargument = 0     // No nearby players left
     SetState
 
 IfBumped
@@ -187,7 +187,7 @@ IfBumped
           tmpargument = 100
           SetTime
         Else
-          tmpargument = 0
+          tmpargument = 0               // Do you want to enter?
           SendMessageNear
           tmpargument = 100
           SetTime

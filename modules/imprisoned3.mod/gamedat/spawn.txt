@@ -42,7 +42,7 @@ crazynpc.obj:   NONE    92  44.4   70.7   0.0   ?    3   0  0   0   0   F   F   
 moduletool.obj:   NONE    38  12.5   27.5   1.0   N    0   0  0   0   0   F   F   N
 
 //Entrance
-tent.obj:   NONE    40  43.5   70.5   0.0   ?    7   4  0   0   0   F   F   E
+tent.obj:   NONE    40  43.5   70.5   0.0   ?    7   4  0   0   0   F   F   C
   gem.obj:   NONE    57  0.0   0.0   0.0   I    0   4  0   0   0   F   F   N
   ppotion.obj:   NONE    58  0.0   0.0   0.0   I    0   0  0   0   0   F   F   N
   oilflask.obj:   NONE    59  0.0   0.0   0.0   I    0   0  0   0   0   F   F   N

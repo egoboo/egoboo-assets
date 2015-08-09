@@ -269,96 +269,14 @@ IfTimeOut
                 PressLatchButton
             SetTargetToOldTarget
 
-    // Hide and unhide
-    tmpargument = 0
-    IfContentIs
-      tmpargument = 255
-      SetLight
-
-      IfStateIs0
-        SetOldTarget
-        tmpargument = 1
-        SetContent
-        SetTargetToNearestEnemy
-
-          // Cant hide in plain sight
-          IfTargetIsAlive
-            tmpx = targetdistance
-            tmpy = 128*4
-            IfXIsLessThanY
-              tmpargument = 0         // They are too close
-              SetContent
-            tmpy = 128*10
-            IfXIsLessThanY
-              tmpx = selfturn - targetturn
-              tmpy = 10768
-              IfXIsMoreThanY
-                tmpy = 55768
-                IfXIsLessThanY
-                  tmpargument = 0     // They are looking at us
-                  SetContent
-
-        // Do it!
-        tmpargument = 1
-        IfContentIs
-          tmpargument = 0
-          SetLight
-          tmpargument = 9
-          SendMessageNear
-          tmpargument = 11
-          PlaySound
-        SetTargetToOldTarget
-
-    // Check for detection
-    tmpargument = 1
-    IfContentIs
-      IfTargetIsOnHatedTeam
-        IfTargetIsAlive
-          tmpdistance = targetdistance * 2
-          tmpx = targetint - tmpdistance        // -3 intellect for every tile the target is away
-          tmpy = selfdex
-          IfXIsMoreThanY
-            tmpargument = 0
-            SetContent
-            tmpargument = 3
-            SendMessageNear
-            tmpargument = 12
-            PlaySound
-
-//------------------------------------------------------------------------------
-// Backstab!
-IfScoredAHit
-  SetTargetToWhoeverWasHit
-  IfTargetIsOnHatedTeam
-    tmpargument = 1
-    IfContentIs
-      tmpargument = 12
-      PlaySound
-
-      // Backstab bonus
-      tmpx = selfturn - targetturn
-      tmpy = 10768
-      IfXIsMoreThanY
-        tmpy = 55768
-        IfXIsLessThanY
-          tmpargument = 0
-          SetContent
-
-      // Proceed if content is still 1
-      tmpargument = 1
-      IfContentIs
-        tmpargument = 10
+    // Try to hide
+    IfStealthed
+      tmpargument = 0
+      SetContent
+    Else
+      EnableStealth
+        tmpargument = 9
         SendMessageNear
-        tmpargument = 0
-        SetContent
-        tmpargument = 13
-        PlaySound
-
-        // 4 bonus damage
-        tmpargument = 1024
-        DamageTarget
-  Else
-    SetTargetToOldTarget
 
 //------------------------------------------------------------------------------
 IfHealed

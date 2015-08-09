@@ -194,7 +194,10 @@ Sound of Jump ( -1 for none )			: 2
 
 // Expansions
 :[DARK] 3        //Level 3 darkvision
-
+:[PERK] Defender
+:[PERK] Hold_The_Line
+:[PERK] Mobile_Defence
+:[PERK] Weapon_Proficiency
 
 //-Notes------------------------------------------------------------------------
 // Money, items, skin, name, team, and position are all set at spawn time

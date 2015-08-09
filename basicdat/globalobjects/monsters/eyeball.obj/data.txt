@@ -192,6 +192,7 @@ Sound of Footfall ( -1 for none )		: -1
 Sound of Jump ( -1 for none )			: -1
 
 :[DARK] 4    //Level 4 darkvision
+:[PERK] Perceptive
 
 //-Notes------------------------------------------------------------------------
 // Money, items, skin, name, team, and position are all set at spawn time

@@ -192,7 +192,7 @@ Sound of Footfall ( -1 for none )		: 0
 Sound of Jump ( -1 for none )			: 2
 
 //Expansions
-:[AWEP] 1             //Advanced weapons profiency
+:[PERK] Weapon_Proficiency
 
 //-Notes------------------------------------------------------------------------
 // Money, items, skin, name, team, and position are all set at spawn time

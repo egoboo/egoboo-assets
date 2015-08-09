@@ -193,8 +193,11 @@ Sound of Jump ( -1 for none )			: 2
 
 
 // Expansions
-:[AWEP] 1
-:[READ] 1
+:[PERK] Literacy
+:[PERK] Weapon_Proficiency
+:[PERK] Jousting
+:[PERK] Defender
+:[PERK] Mobile_Defence
 
 //-Notes------------------------------------------------------------------------
 // Money, items, skin, name, team, and position are all set at spawn time

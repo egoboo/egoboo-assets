@@ -78,7 +78,8 @@ IfStateIs7
     tmpy = tmpargument
     IfXIsLessThanY
       IfHoldingMeleeWeapon
-        PressLatchButton
+        IfFacingTarget
+          PressLatchButton
   Else
     IfHoldingShield
       PressLatchButton
@@ -119,6 +120,8 @@ IfKilled
   // Drop goodies
   tmpargument = selfmoney
   DropMoney
+  DropKeys
+  DropItems
 
   // Make the character body
   tmpargument = 40
@@ -239,24 +242,25 @@ IfTimeOut
       AddWaypoint
 
       // Check for special mount attacks
-      tmpx = targetdistance
-      tmpy = 200
-      IfXIsLessThanY
-        tmpargument = [XFUN]
-        SetOldTarget
-        SetTargetToWhoeverIsHolding
-        IfTargetHasAnyID
-          tmpargument = LATCHRIGHT
-          PressLatchButton
-          SetTargetToOldTarget
-        Else
-          // Don't let the enemy jump over
-          SetTargetToOldTarget
-          tmpx = selfz
-          tmpy = targetz - 40
-          IfXIsLessThanY
-            IfHoldingMeleeWeapon
-              PressLatchButton
+      IfFacingTarget
+        tmpx = targetdistance
+        tmpy = 200
+        IfXIsLessThanY
+          tmpargument = [XFUN]
+          SetOldTarget
+          SetTargetToWhoeverIsHolding
+          IfTargetHasAnyID
+            tmpargument = LATCHRIGHT
+            PressLatchButton
+            SetTargetToOldTarget
+          Else
+            // Don't let the enemy jump over
+            SetTargetToOldTarget
+            tmpx = selfz
+            tmpy = targetz - 40
+            IfXIsLessThanY
+              IfHoldingMeleeWeapon
+                PressLatchButton
 
       tmpargument = rand & 15 + 15 // TIme
     Else
@@ -273,13 +277,8 @@ IfTimeOut
       // Odd states are for melee weapons
       IfTargetIsAttacking
         IfHoldingShield
-          // Is the enemy facing the character?
-          tmpturn = selfturn - targetturn
-          tmpx = tmpturn
-          tmpy = 24768
-          IfXIsMoreThanY
-            tmpy = 40768
-            IfXIsLessThanY
+          IfTargetIsFacingSelf
+            IfFacingTarget
               // Defend
               PressLatchButton
               tmpargument = 7
@@ -295,17 +294,15 @@ IfTimeOut
 
         tmpx = targetx
         tmpy = targety
-        SetTargetToNearestFriend
-          tmpdistance = 100
-          tmpturn = targetdistance
-          IfDistanceIsMoreThanTurn
-            // The friend is close, so move away
-            tmpturn = targetturnto + 32768
-            tmpdistance = 400
-            Compass
-            // Make it look better
-            tmpargument = ACTIONWB
-            DoAction
+        tmpdistance = 100
+        SetTargetToDistantFriend
+          // The friend is close, so move away
+          tmpturn = targetturnto + 32768
+          tmpdistance = 400
+          Compass
+          // Make it look better
+          tmpargument = ACTIONWB
+          DoAction
           SetTargetToOldTarget
         tmpturn = targetturnto + 32768
         tmpdistance = 300
@@ -328,8 +325,9 @@ IfTimeOut
         IfXIsLessThanY
           tmpargument = 5
           IssueOrder
-          IfHoldingMeleeWeapon
-            PressLatchButton
+          IfFacingTarget
+            IfHoldingMeleeWeapon
+              PressLatchButton
 
         tmpargument = rand & 15 + 10 // Time
       IfStateIs5
@@ -348,8 +346,9 @@ IfTimeOut
         tmpy = tmpargument
         IfXIsLessThanY
           // Close enough to attack
-          IfHoldingMeleeWeapon
-            PressLatchButton
+          IfFacingTarget
+            IfHoldingMeleeWeapon
+              PressLatchButton
           // Circle up again
           tmpx = targetx
           tmpy = targety
@@ -375,6 +374,7 @@ IfTimeOut
           ClearWaypoints
           AddWaypoint
           tmpargument = rand & 15 + 8 // Time
+          
       IfStateIs1
         // Rummage for a weapon
         IfHoldingMeleeWeapon
@@ -399,11 +399,30 @@ IfTimeOut
             ClearWaypoints
             AddWaypoint
             tmpargument = rand & 15 + 30 // Time
+
+      //Make sure we are armed and ready for combat
+      IfHoldingMeleeWeapon
+        DoNothing
+      Else
+
+        //Or look for a nearby weapon
+        SetTargetToNearbyMeleeWeapon
+          tmpx = targetdistance
+          tmpy = 150
+          IfXIsLessThanY
+            tmpargument = LATCHALTRIGHT
+            PressLatchButton
+          Else
+            tmpx = targetx
+            tmpy = targety
+            ClearWaypoints
+            AddWaypoint
         Else
-          // Draw a new weapon
+          // Draw a new weapon from pack
           tmpargument = LATCHPACKRIGHT
           PressLatchButton
-          tmpargument = 15 // Time
+
+        tmpargument = 15 // Time
     Else
       // Even states are for ranged weapons...
       IfStateIs8    // ...and sleeping
@@ -475,53 +494,30 @@ IfTimeOut
         SetState
 
         // Don't shoot if friends are too close
-        SetTargetToNearestFriend
-          tmpx = targetdistance
-          tmpy = 00
-          IfXIsLessThanY
-            // Keep distance from friends
-            tmpx = targetx
-            tmpy = targety
-            tmpturn = rand & 8191 + 28000 + targetturnto
-            tmpdistance = 300
-            Compass
-            ClearWaypoints
-            AddWaypoint
+        tmpdistance = 100
+        SetTargetToDistantFriend
+          // Keep distance from friends
+          tmpx = targetx
+          tmpy = targety
+          tmpturn = rand & 8191 + 28000 + targetturnto
+          tmpdistance = 300
+          Compass
+          ClearWaypoints
+          AddWaypoint
+        Else
+          // Safe to fire
+          SetTargetToOldTarget
+          IfHoldingRangedWeapon
+            SetTurnModeToWatchTarget
+            IfFacingTarget
+              PressLatchButton
           Else
-            // Safe to fire
-            SetTargetToOldTarget
-            IfHoldingRangedWeapon
-              SetTurnModeToWatchTarget
-              IfFacingTarget
-                PressLatchButton
-            Else
 //              // Reload the weapon...
 //              SetOldTarget
 //              SetTargetToSelf
 //              tmpargument = [WOOD]
 //              RestockTargetAmmoIDAll
 //              SetTargetToOldTarget
-
-              // Draw a new weapon
-              DropWeapons
-              // Go to close range mode
-              tmpargument = 100
-              SetContent
-              // Now using melee weapons
-              tmpargument = 1
-              SetState
-        Else
-          // Safe to fire
-          IfHoldingRangedWeapon
-            IfFacingTarget
-              PressLatchButton
-          Else
-//            // Reload the weapon...
-//            SetOldTarget
-//            SetTargetToSelf
-//            tmpargument = [WOOD]
-//            RestockTargetAmmoIDAll
-//            SetTargetToOldTarget
 
             // Draw a new weapon
             DropWeapons
@@ -531,6 +527,27 @@ IfTimeOut
             // Now using melee weapons
             tmpargument = 1
             SetState
+      Else
+        // Safe to fire
+        IfHoldingRangedWeapon
+          IfFacingTarget
+            PressLatchButton
+        Else
+//            // Reload the weapon...
+//            SetOldTarget
+//            SetTargetToSelf
+//            tmpargument = [WOOD]
+//            RestockTargetAmmoIDAll
+//            SetTargetToOldTarget
+
+          // Draw a new weapon
+          DropWeapons
+          // Go to close range mode
+          tmpargument = 100
+          SetContent
+          // Now using melee weapons
+          tmpargument = 1
+          SetState
 
         tmpargument = rand & 7 + 10 // Time before next check
       IfStateIs2

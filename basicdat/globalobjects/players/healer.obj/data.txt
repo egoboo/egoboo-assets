@@ -204,7 +204,7 @@ Sound of Jump ( -1 for none )			: 10
 :[POOL] Toughness
 :[POOL] Defender
 :[POOL] Mobile_Defence
-:[POOL] Hold_The_Line
+:[POOL] Hold_the_Line
 :[POOL] Fast_Learner
 :[POOL] Read_G'nomish
 :[POOL] Stalwart

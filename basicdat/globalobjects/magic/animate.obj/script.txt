@@ -248,8 +248,21 @@ IfStateIs0
     SetTargetToWhoeverIsHolding
     tmpargument = [WMAG]
     IfTargetHasSkillID
-      GetContent
-      tmpx = tmpargument
+
+      //Determine max charge
+      tmpx = targetmanaflow
+      tmpy = 3*256
+      IfXIsMoreThanY
+        tmpdistance = tmpy
+      Else
+        tmpdistance = tmpx
+
+      //Display spell charge for players
+      tmpargument = selfcontent //Current
+      tmpturn = 256             //Tick width
+      DisplayCharge
+
+      tmpx = selfcontent
       tmpy = 768
       IfXIsLessThanY
         tmpy = targetmanaflow
@@ -257,8 +270,7 @@ IfStateIs0
           tmpx = 4
           tmpargument = tmpx
           CostTargetMana
-            GetContent
-            tmpargument = tmpargument + tmpx
+            tmpargument = selfcontent + tmpx
             SetContent
             tmpx = targetx
             tmpy = targety

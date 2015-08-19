@@ -101,5 +101,4 @@ Respawn character on hit ( TRUE or FALSE )		: FALSE
 Mana drain on hit ( 0 to 50 )				: 0
 Life drain on hit ( 0 to 50 )				: 0
 
-:[HUGE] 1 // Too big
-:[BLOC] 0 // Cannot be blocked!
+:[BLOC] 0   //Cannot be blocked!

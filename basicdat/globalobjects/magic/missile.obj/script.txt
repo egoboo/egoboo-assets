@@ -9,10 +9,24 @@ IfTakenOut
 
 // Spell AI
 IfUsed
+  SetTargetToWhoeverIsHolding
+
+  //Determine max charge
+  tmpx = targetmanaflow
+  tmpy = 6*256
+  IfXIsMoreThanY
+    tmpdistance = tmpy
+  Else
+    tmpdistance = tmpx
+
+  //Display spell charge for players
+  tmpargument = selfcontent //Current
+  tmpturn = 256             //Tick width
+  DisplayCharge
+
   tmpx = selfcontent
   tmpy = 1536
   IfXIsLessThanY
-    SetTargetToWhoeverIsHolding
     tmpargument = [WMAG]
     IfTargetHasSkillID
       tmpy = targetmanaflow

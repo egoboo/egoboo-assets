@@ -32,6 +32,13 @@ IfStateIs0
       SetReloadTime
     // Nope, so charge
     Else
+
+      //Display spell charge for players
+      tmpargument = selfcontent //Current
+      tmpdistance = 512         //Max charge
+      tmpturn = 0               //Tick width
+      DisplayCharge
+
       SetTargetToWhoeverIsHolding
       tmpargument = [WMAG]
       IfTargetHasSkillID

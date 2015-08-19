@@ -306,6 +306,20 @@ IfStateIs0
   IfUsed
     SetTargetToWhoeverIsHolding
     SetOwnerToTarget
+
+    //Determine max charge
+    tmpx = targetmanaflow
+    tmpy = 2048
+    IfXIsMoreThanY
+      tmpdistance = tmpy
+    Else
+      tmpdistance = tmpx
+
+    //Display spell charge for players
+    tmpargument = selfcontent //Current
+    tmpturn = 256             //Tick width
+    DisplayCharge
+
     tmpx = 0
     tmpy = 1
     tmpargument = [WMAG]

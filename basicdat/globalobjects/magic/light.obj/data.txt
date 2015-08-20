@@ -24,7 +24,7 @@ INT up         : 0.00
 DEX            : 1.00
 DEX up         : 0.00
 
-Size           : 1.00
+Size           : 1.00-
 Size up        : 0.00
 Shadow size    : 0
 Bump size      : 0
@@ -158,5 +158,5 @@ Jump sound     : -1
 :[HIDE] 0
 :[PLAT] 0
 :[ICON] 0
-:[BOOK] 0
+:[BOOK] 1
 :[RIPP] 0       //Do not make ripples

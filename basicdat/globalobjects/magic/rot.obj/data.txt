@@ -156,4 +156,4 @@ Jump sound     : -1
 
 :[HIDE] 0
 :[VALU] 1       //Always sold at 100% price
-:[BOOK] 3
+:[BOOK] 4

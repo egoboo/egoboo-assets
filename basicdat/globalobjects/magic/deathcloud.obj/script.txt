@@ -32,10 +32,15 @@ IfUsed
     tmpargument = 4
     SpawnExactParticle
 
+    //Display spell charge for players
+    tmpargument = selfcontent //Current
+    tmpturn = 0               //Tick width
+    tmpdistance = 900         //Max charge
+    DisplayCharge
+
     // Charge it up!
     SetTargetToWhoeverIsHolding
-    GetContent
-    tmpx = tmpargument
+    tmpx = selfcontent
     tmpy = 906
     IfXIsLessThanY
       tmpy = targetmanaflow

@@ -52,6 +52,13 @@ Else
       SetReloadTime
     // Nope, so charge
     Else
+
+      //Display spell charge for players
+      tmpargument = selfcontent //Current
+      tmpturn = 0               //Tick width
+      tmpdistance = 380         //Max charge
+      DisplayCharge
+
       tmpx = selfcontent
       tmpy = 380
       IfXIsLessThanY

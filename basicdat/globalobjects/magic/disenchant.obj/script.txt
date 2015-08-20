@@ -20,6 +20,13 @@ IfUsed
   SetTargetToWhoeverIsHolding
     tmpargument = [WMAG]
     IfTargetHasSkillID
+
+      //Display spell charge for players
+      tmpargument = selfcontent //Current
+      tmpturn = 0               //Tick width
+      tmpdistance = 256*3       //Max charge
+      DisplayCharge
+
       tmpx = selfcontent
       tmpy = 768
       IfXIsLessThanY

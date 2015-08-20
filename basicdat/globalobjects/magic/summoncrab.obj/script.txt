@@ -145,8 +145,15 @@ IfStateIs0
       SetTargetToWhoeverIsHolding
       tmpargument = [WMAG]
       IfTargetHasSkillID
+
+        //Display spell charge for players
+        tmpargument = selfcontent //Current
+        tmpturn = 256            //Tick width
+        tmpdistance = 256*6      //Max charge
+        DisplayCharge
+
         tmpx = selfcontent            // Current spellpower
-        tmpy = 1536                // 6 spellpower is max
+        tmpy = 256*6                // 6 spellpower is max
         IfXIsLessThanY                // Not already max power?
           tmpy = targetmanaflow            // High enough level to continue casting?
           IfXIsLessThanY

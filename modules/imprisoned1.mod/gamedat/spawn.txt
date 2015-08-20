@@ -24,7 +24,7 @@
 //         Name      Slot Xpos Ypos Zpos Dir Mon Skn Pas Con Lvl Stt Gho Team
  
 #dependency FrostBlast            83
-#dependency FlameDart             82
+#dependency FireBrand             82
 
 #dependency Ghuul                 97
 

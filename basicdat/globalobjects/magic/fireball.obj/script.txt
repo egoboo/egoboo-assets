@@ -54,8 +54,14 @@ IfStateIs0
       tmpdistance = selfz
       tmpargument = 0
       SpawnExactParticle
-      GetContent
-      tmpx = tmpargument
+
+      //Display spell charge for players
+      tmpargument = selfcontent //Current
+      tmpturn = 512             //Tick width
+      tmpdistance = 2000        //Max charge
+      DisplayCharge
+
+      tmpx = selfcontent
       tmpy = targetmanaflow
       IfXIsLessThanY
         tmpy = 2000            // Maximum charge

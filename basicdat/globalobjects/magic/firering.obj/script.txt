@@ -17,6 +17,13 @@ IfDropped
 
 // Spell AI
 IfUsed
+
+  //Display spell charge for players
+  tmpargument = selfcontent //Current
+  tmpturn = 256             //Tick width
+  tmpdistance = 1024        //Max charge
+  DisplayCharge
+
   tmpx = selfcontent
   tmpy = 1024
   IfXIsLessThanY
@@ -28,8 +35,7 @@ IfUsed
         tmpx = 8
         tmpargument = tmpx
         CostTargetMana
-          GetContent
-          tmpargument = tmpargument + tmpx
+          tmpargument = selfcontent + tmpx
           SetContent
           tmpargument = tmpargument > 8
           SetState
@@ -89,7 +95,7 @@ tmpx = selfcontent
 tmpy = 0
 
 IfXIsMoreThanY
-  tmpturn = tmpargument < 4 + 500
+  tmpturn = selfcontent < 4 + 500
   tmpdistance = SPAWNORIGIN
   tmpargument = 0
   SpawnAttachedSizedParticle

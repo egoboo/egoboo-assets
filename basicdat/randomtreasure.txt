@@ -95,7 +95,7 @@
 :Enchant
 :Fireball
 :Firering
-:FlameDart
+:FireBrand
 :FrostBlast
 :GlacialSpike
 :Haste

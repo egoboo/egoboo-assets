@@ -113,6 +113,13 @@ IfStateIs0
         SendMessageNear
   // Allow it to be used
   IfUsed
+
+    //Display spell charge for players
+    tmpargument = selfcontent //Current
+    tmpturn = 256             //Tick width
+    tmpdistance = 256*8       //Max charge
+    DisplayCharge
+
     SetTargetToWhoeverIsHolding
     tmpargument = [WMAG]
     IfTargetHasSkillID

@@ -22,6 +22,7 @@ IfStateIs0
         SendMessageNear
   // Allow it to be used
   IfUsed
+
     SetTargetToWhoeverIsHolding
       tmpx = selfx
       tmpy = selfy

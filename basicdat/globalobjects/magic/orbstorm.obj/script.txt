@@ -19,12 +19,19 @@ IfCrushed
 // Spell AI
 IfUsed
   GetContent
-  tmpx = tmpargument
+  tmpx = selfcontent
   tmpy = 1024                   // Max charge
   IfXIsLessThanY
     SetTargetToWhoeverIsHolding
     tmpargument = [WMAG]
     IfTargetHasSkillID            // Arcane casters only
+
+      //Display spell charge for players
+      tmpargument = selfcontent //Current
+      tmpturn = 256             //Tick width
+      tmpdistance = 4*256       //Max charge
+      DisplayCharge
+
       tmpx = tmpx*3
       tmpy = targetmanaflow*2
       IfXIsLessThanY            // Enough manaflow?
@@ -34,10 +41,9 @@ IfUsed
         IfXIsMoreThanY
           tmpargument = 13
           CostTargetMana        // Mana cost
-            GetContent
-            tmpargument = tmpargument + 7
+            tmpargument = selfcontent + 7
             SetContent            // Casting Time
-            tmpargument = tmpargument > 8
+            tmpargument = selfcontent > 8
             SetState            // Set spell power
 Else
   GetContent

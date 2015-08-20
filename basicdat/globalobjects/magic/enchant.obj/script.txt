@@ -19,6 +19,13 @@ IfUsed
   // Nope, so charge
   Else
     SetTargetToWhoeverIsHolding
+
+    //Display spell charge for players
+    tmpargument = selfcontent //Current
+    tmpturn = 0               //Tick width
+    tmpdistance = 256*2       //Max charge
+    DisplayCharge
+
     tmpargument = [WMAG]
     IfTargetHasSkillID
       tmpx = selfcontent

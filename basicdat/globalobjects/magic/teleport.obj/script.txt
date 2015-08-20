@@ -20,6 +20,12 @@ IfUsed
   tmpargument = [WMAG]
   IfTargetHasSkillID        // Can cast spell?
 
+    //Display spell charge for players
+    tmpargument = selfcontent //Current
+    tmpturn = 0               //Tick width
+    tmpdistance = 3*256       //Max charge
+    DisplayCharge
+
     // Aiming Cursor
     SetTargetToOwner
     GetContent

@@ -21,8 +21,14 @@ IfUsed
     SetTargetToWhoeverIsHolding
     tmpargument = [WMAG]
     IfTargetHasSkillID
-      GetContent
-      tmpx = tmpargument
+
+      //Display spell charge for players
+      tmpargument = selfcontent //Current
+      tmpturn = 0               //Tick width
+      tmpdistance = 512         //Max charge
+      DisplayCharge
+
+      tmpx = selfcontent
       tmpy = 512
       IfXIsLessThanY
         tmpy = targetmanaflow

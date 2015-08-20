@@ -50,6 +50,13 @@ IfStateIs0
     Else
       SetTargetToWhoeverIsHolding
       SetOwnerToTarget
+
+      //Display spell charge for players
+      tmpargument = selfcontent //Current
+      tmpturn = 0               //Tick width
+      tmpdistance = 6*256       //Max charge
+      DisplayCharge
+
       tmpx = targetmanaflow
       tmpy = 1536
       IfXIsMoreThanY

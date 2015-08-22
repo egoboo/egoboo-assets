@@ -167,7 +167,7 @@ Jump sound     : 7
 :[POOL] Gigantism
 :[POOL] Defender
 :[POOL] Mobile_Defence
-:[POOL] Hold_The_Line
+:[POOL] Hold_the_Line
 :[POOL] Stalwart
 :[POOL] Endurance
 :[POOL] Athletics

@@ -75,3 +75,4 @@ Dexterity boost ( -3.0 to 3.0 )			: 0.0
 :[SEND] 0		// The end sound
 :[STAY] 1
 :[DEAD] 1 // Stay around even if the target is dead
+:[NAME] Scroll_Kurse

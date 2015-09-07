@@ -74,3 +74,4 @@ Dexterity boost ( -3.0 to 3.0 )			: 0.0
 // Expansions...
 :[SEND] 0	// The end sound
 :[SFRQ] 9000	// The end sound frequency
+:[NAME] Enchant_Weapon

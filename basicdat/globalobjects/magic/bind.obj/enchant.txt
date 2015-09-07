@@ -77,3 +77,4 @@ Dexterity boost ( -3.0 to 3.0 )			: 0.0
 :[TYPE] 0	// Spawn particles of type 0
 :[FACE] 8192	// Facing add for each one...
 :[SEND] 0       // The end sound
+:[NAME] Bind

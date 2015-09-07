@@ -77,3 +77,4 @@ Dexterity boost ( -3.0 to 3.0 )			: -4.0
 :[TYPE] 0       // Spawn particles of type 0
 :[FACE] 1500    // Facing add for each one...
 :[SEND] 3	      // The end sound
+:[NAME] Voodo_Kurse

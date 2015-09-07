@@ -71,3 +71,4 @@ Intelligence boost ( -3.0 to 3.0 )		: -3.00
 Dexterity boost ( -3.0 to 3.0 )			: 0.0
 
 :[STAY] 1     //Stay around even if owner died
+:[NAME] Mind_Drain

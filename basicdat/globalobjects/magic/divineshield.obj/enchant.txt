@@ -73,3 +73,4 @@ Dexterity boost ( -3.0 to 3.0 )			: 0.0
 :[AMOU] 1       	// Amount to spawn each time
 :[TIME] 2       	// Spawn every update... 1 spawn per second
 :[TYPE] 0       	// Spawn particles of type 0
+:[NAME] Divine_Shield

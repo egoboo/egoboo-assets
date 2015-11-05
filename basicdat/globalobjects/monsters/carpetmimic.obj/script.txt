@@ -18,7 +18,7 @@ IfSpawned
 //----------------------------------------------------------------------------
 // Engulf enemies
 IfStateIsGuard
-  tmpdistance = 100
+  tmpdistance = 128
   SetTargetToDistantEnemy           // Try to grab them!
     tmpargument = ACTIONUA
     DoAction
@@ -33,9 +33,25 @@ IfStateIsGuard
     tmpargument = ACTIONDA        // Just lie there
     DoAction
 
+IfBumped
+  //Already holding something?
+  SetTargetToRider
+    DoNothing
+  Else
+    //Try to grab them!
+    tmpargument = ACTIONUA
+    DoAction
+    KeepAction
+    tmpargument = STATECHARGE
+    SetState
+    tmpargument = 30
+    SetTime
+    tmpargument = 0
+    PlaySound    
+
 IfStateIsWander
   UnkeepAction
-  tmpdistance = 100
+  tmpdistance = 128
   SetTargetToDistantEnemy           // Try to grab them!
     tmpargument = ACTIONUA
     DoAction

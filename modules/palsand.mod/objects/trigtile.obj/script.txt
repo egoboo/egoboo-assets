@@ -7,7 +7,7 @@ IfStateIs0
     IfTargetIsSelf
       // First find the nearest chest
       tmpargument = [LOCK]
-      tmpdistance = 14 // Items, friends and enemies
+      tmpdistance = BLAHENEMIES + BLAHFRIENDS + BLAHITEMS //Items, friends and enemies
       SetTargetToNearestBlahID
     Else
       // Check the chest's state

@@ -10,13 +10,16 @@ IfTakenOut
     IfTargetIsAPlayer
       tmpargument = 3
       SendMessageNear
+
 // Allow it to be charged up
 IfUsed
+  UnsparkleIcon
+
   // Does it have one going?
   UndoEnchant
     tmpargument = 60
     SetReloadTime
-  // Nope, so charge
+    // Nope, so charge
   Else
     SetTargetToWhoeverIsHolding
     tmpargument = [WMAG]
@@ -36,8 +39,7 @@ IfUsed
           tmpx = 8
           tmpargument = tmpx
           CostTargetMana
-            GetContent
-            tmpargument = tmpargument + 4
+            tmpargument = selfcontent + tmpx
             SetContent
             tmpx = targetx
             tmpy = targety
@@ -58,8 +60,7 @@ IfUsed
 
 // Let it be cast
 Else
-  GetContent
-  tmpx = tmpargument
+  tmpx = selfcontent
   tmpy = 0
   IfXIsMoreThanY
     tmpy = 511
@@ -68,6 +69,7 @@ Else
       UndoEnchant  // There can be only one
       SetTargetToWhoeverIsHolding
       SetOwnerToTarget
+      UnsparkleIcon
 
       // Find the target
       SetTargetToNearestFriend
@@ -90,7 +92,6 @@ Else
 
       // Do flashy things
       tmpargument = 0
-      tmpdistance = 22050
       PlaySound
       tmpargument = 60
       SetReloadTime

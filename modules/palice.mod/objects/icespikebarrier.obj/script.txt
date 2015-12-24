@@ -1,0 +1,11 @@
+IfSpawned
+  tmpargument = ACTIONDA
+  DoActionOverride
+  KeepAction
+
+IfKilled
+  tmpargument = 0
+  PlaySound
+  SendMessageNear
+
+End

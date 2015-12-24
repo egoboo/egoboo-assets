@@ -8,4 +8,8 @@ IfKilled
   PlaySound
   SendMessageNear
 
+IfAttacked
+  tmpargument = 1
+  PlaySound
+
 End

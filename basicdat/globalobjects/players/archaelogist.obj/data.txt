@@ -160,11 +160,11 @@ Jump sound     : 1
 :[DRES] 3	//Armor is dressy
 
 //Starting Perks
-:[PERK] Traplore
+:[PERK] Trap_Lore
 :[PERK] Perceptive
 :[PERK] Literacy
 :[PERK] Read_G'nomish
-:[PERK] Acrobacy
+:[PERK] Acrobatic
 :[PERK] Use_Technological_Items
 
 //Perks that this class can learn (should be at least 22)

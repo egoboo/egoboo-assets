@@ -30,8 +30,8 @@ Level 0... Wave speed ( 3 )				: 8
 Level 0... Brightness ( 15 )				: 15
 Level 0... Ambient light ( 15 )				: 15
 Level 0... Wave amplitude ( 7.0 )			: 4.0
-Level 0... U speed ( .0002 )				: -.0005
-Level 0... V speed ( .0002 )				: -.0012
+Level 0... U speed ( .0002 )				: -.0002
+Level 0... V speed ( .0002 )				: -.0006
 
 Level 1... Base water level ( 80 )			: 45
 Level 1... Alpha level ( 100 )				: 200
@@ -39,8 +39,8 @@ Level 1... Wave speed ( 2 )				: 6
 Level 1... Brightness ( 31 )				: 31
 Level 1... Ambient light ( 15 )				: 15
 Level 1... Wave amplitude ( 8.0 )			: 2.0
-Level 1... U speed ( -.0005 )				:  .0002
-Level 1... V speed ( .0005 )				: -.0022
+Level 1... U speed ( -.0005 )				:  .0001
+Level 1... V speed ( .0005 )				: -.0011
 
 Light X direction ( 1.00 )				: 1.00
 Light Y direction ( 1.00 )				: 1.00

@@ -197,7 +197,7 @@ Sound of Jump ( -1 for none )			: 1
 :[PERK] Weapon_Proficiency
 :[PERK] Dodge
 :[PERK] Masterful_Dodge
-:[PERK] Acrobatics
+:[PERK] Acrobatic
 
 //-Notes------------------------------------------------------------------------
 // Money, items, skin, name, team, and position are all set at spawn time

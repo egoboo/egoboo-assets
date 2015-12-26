@@ -3,11 +3,11 @@ Name ( with underscores for spaces )		: Water_Palace
 Reference module ( Directory name or NONE )	: palsand.mod
 Required reference IDSZ ( or [NONE] )		: [MAIN] 0
 Number of imports ( 0 to 4 )                    		: 4
-Allow exporting of characters ( TRUE or FALSE ) 	: FALSE
+Allow exporting of characters ( True or False ) 	: False
 Minimum number of players ( 1 to 4 )		: 1
 Maximum number of players ( 1 to 4 )		: 4
-Allow respawning ( ANYTIME, TRUE or FALSE )	: TRUE
-Is a RTS module (TRUE or FALSE)			      : FALSE
+Allow respawning ( ANYTIME, True or False )	: True
+Is a RTS module (True or False)			      : False
 Level rating ( *, **, ***, ****, or ***** )     		: *****
 
 

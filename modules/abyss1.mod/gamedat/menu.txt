@@ -3,11 +3,11 @@ Name ( with underscores for spaces ) : Abyss_Part_1
 Reference module ( Directory name or NONE ) : catacomb2.mod
 Required reference IDSZ ( or [NONE] ) : [MAIN] 6
 Number of imports ( 0 to 4 ) : 4
-Allow exporting of characters ( TRUE or FALSE ) : FALSE
+Allow exporting of characters ( True or False ) : False
 Minimum number of players ( 1 to 4 ) : 1
 Maximum number of players ( 1 to 4 ) : 4
-Allow respawning ( TRUE or FALSE ) : TRUE
-Is a RTS module (TRUE or FALSE) : FALSE
+Allow respawning ( True or False ) : True
+Is a RTS module (True or False) : False
 Level rating ( *, **, ***, ****, or ***** ) : ********
 
 

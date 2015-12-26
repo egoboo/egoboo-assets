@@ -1,6 +1,6 @@
 Slot number    : -1
 Class name     : Book
-Uniform light  : FALSE
+Uniform light  : False
 Maximum ammo   : 0
 Current ammo   : 0
 Gender         : OTHER
@@ -40,14 +40,14 @@ Fly to height  : 0
 Flashing AND   : 255
 Alpha blending : 255
 Light blending : 255
-Transfer blend : FALSE
+Transfer blend : False
 Sheen          : 0
-Phong mapping  : FALSE
+Phong mapping  : False
 Texture X add  : 0.00
 Texture Y add  : 0.00
-Sticky butt    : TRUE
+Sticky butt    : True
 
-Invictus       : TRUE
+Invictus       : True
 NonI facing    : 0
 NonI angle     : 0
 I facing       : 0
@@ -95,16 +95,16 @@ IDSZ Special   : [NONE]
 IDSZ Hate      : [NONE]
 IDSZ Vulnie    : [NONE]
 
-Is an item     : TRUE
-Is a mount     : FALSE
-Is stackable   : FALSE
-Name known     : FALSE
-Usage known    : FALSE
-Is exportable  : TRUE
-Requires skill : TRUE
-Is platform    : FALSE
-Collects money : FALSE
-Can open stuff : FALSE
+Is an item     : True
+Is a mount     : False
+Is stackable   : False
+Name known     : False
+Usage known    : False
+Is exportable  : True
+Requires skill : True
+Is platform    : False
+Collects money : False
+Can open stuff : False
 
 Damage type    : CRUSH
 Attack type    : WALK
@@ -113,20 +113,20 @@ Attached parts : 0
 Reaffirm type  : NONE
 Particle type  : 0
 
-Left valid     : TRUE
-Right valid    : TRUE
+Left valid     : True
+Right valid    : True
 
-Part on weapon : FALSE
+Part on weapon : False
 Part type      : -1
 
 Poof amount    : 0
 Facing add     : 0
 Part type      : 0
 
-Blud valid    : FALSE
+Blud valid    : False
 Part type      : 0
 
-Waterwalking   : FALSE
+Waterwalking   : False
 Bounce dampen  : 0.400
 
 Life healing   : 0.000
@@ -143,12 +143,12 @@ Skin 2 cost    : 100
 Skin 3 cost    : 100
 STR dampen     : 0.25
 
-No rider attak : FALSE
-Can be dazed   : FALSE
-Can be grogged : FALSE
+No rider attak : False
+Can be dazed   : False
+Can be grogged : False
 NOT USED       : 0
 NOT USED       : 0
-Can see invisi : TRUE
+Can see invisi : True
 Kursed chance  : 0
 Footfall sound : -1
 Jump sound     : -1

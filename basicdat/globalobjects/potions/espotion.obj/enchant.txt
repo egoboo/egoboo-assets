@@ -1,9 +1,9 @@
 // Basic enchantment stuff
-Retarget as target's weapon ( TRUE or FALSE )	: FALSE
-Override set values ( TRUE or FALSE )		: TRUE
-Remove overridden enchants ( TRUE or FALSE )	: TRUE
-Kill character on end ( TRUE or FALSE )		: FALSE
-Spawn poof on end ( TRUE or FALSE )		: FALSE
+Retarget as target's weapon ( True or False )	: False
+Override set values ( True or False )		: True
+Remove overridden enchants ( True or False )	: True
+Kill character on end ( True or False )		: False
+Spawn poof on end ( True or False )		: False
 Seconds before end ( -1 for infinite )		: 60
 End message ( -1 for none )			: 6
 
@@ -11,7 +11,7 @@ End message ( -1 for none )			: 6
 // Enchantment draining/sustaining
 Owner's mana boost each second ( -1.0 to 1.0 )	: 0.0
 Target's mana boost each second ( -1.0 to 1.0 ) : 0.0
-End if mana can't be payed ( TRUE or FALSE )	: FALSE
+End if mana can't be payed ( True or False )	: False
 Owner's life boost each second ( -1.0 to 1.0 )	: 0.0
 Target's life boost each second ( -1.0 to 1.0 )	: 0.0
 
@@ -43,12 +43,12 @@ Light blending ( 255 is normal )		: F 128
 Alpha blending ( 255 is normal )		: F 1
 Sheen ( 0 - 15, 0 is dull, 15 is shiny )	: F 0
 Fly to height ( 0 to 255, Won't affect innate )	: F 40
-Walk on water ( TRUE or FALSE, Not on innate )	: F TRUE
-Can see invisible ( TRUE or FALSE )		: F TRUE
+Walk on water ( True or False, Not on innate )	: F True
+Can see invisible ( True or False )		: F True
 Missile treatment ( NORMAL, DEFLECT, REFLECT )	: F DEFLECT
 Cost for each missile treated ( 0.0 to 1.0 )	: F 3.0
-Morph target ( TRUE )				: F TRUE
-Target may now channel life ( TRUE )		: F TRUE
+Morph target ( True )				: F True
+Target may now channel life ( True )		: F True
 
 
 // Modify target's attributes...  These are cumulative, and

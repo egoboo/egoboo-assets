@@ -55,7 +55,7 @@ Limits:
     unsigned short  meshbumplistchrnum[MAXMESHFAN/16];  // Number on the block
     unsigned short  meshbumplistprt[MAXMESHFAN/16];     // For particle collisions
     unsigned short  meshbumplistprtnum[MAXMESHFAN/16];  // Number on the block
-    unsigned char   meshexploremode = FALSE;            // Explore mode?
+    unsigned char   meshexploremode = False;            // Explore mode?
     int             maxtotalmeshvertices  = (256*256*6);// Max number of vertices
     int             meshsizex;                          // Size in fansquares
     int             meshsizey;                          //

@@ -1,6 +1,6 @@
 Slot number    : -1
 Class name     : Centaur
-Uniform light  : FALSE
+Uniform light  : False
 Maximum ammo   : 0
 Current ammo   : 0
 Gender         : MALE
@@ -40,14 +40,14 @@ Fly to height  : 0
 Flashing AND   : 255
 Alpha blending : 255
 Light blending : 255
-Transfer blend : TRUE
+Transfer blend : True
 Sheen          : 0
-Phong mapping  : FALSE
+Phong mapping  : False
 Texture X add  : 0.00
 Texture Y add  : 0.00
-Sticky butt    : FALSE
+Sticky butt    : False
 
-Invictus       : FALSE
+Invictus       : False
 NonI facing    : 0
 NonI angle     : 0
 I facing       : 0
@@ -96,16 +96,16 @@ IDSZ Special   : [NONE]
 IDSZ Hate      : [NONE]
 IDSZ Vulnie    : [SILV]
 
-Is an item     : FALSE
-Is a mount     : FALSE
-Is stackable   : FALSE
-Name known     : TRUE
-Usage known    : TRUE
-Is exportable  : FALSE
-Requires skill : FALSE
-Is platform    : FALSE
-Collects money : TRUE
-Can open stuff : TRUE
+Is an item     : False
+Is a mount     : False
+Is stackable   : False
+Name known     : True
+Usage known    : True
+Is exportable  : False
+Requires skill : False
+Is platform    : False
+Collects money : True
+Can open stuff : True
 
 Damage type    : CRUSH
 Attack type    : BASH
@@ -114,20 +114,20 @@ Attached parts : 0
 Reaffirm type  : NONE
 Particle type  : 0
 
-Left valid     : TRUE
-Right valid    : TRUE
+Left valid     : True
+Right valid    : True
 
-Part on weapon : TRUE
+Part on weapon : True
 Part type      : 0
 
 Poof amount    : 8
 Facing add     : 8192
 Part type      : 1
 
-Blood valid    : FALSE
+Blood valid    : False
 Part type      : 0
 
-Waterwalking   : FALSE
+Waterwalking   : False
 Bounce dampen  : 0.600
 
 Life healing   : 0.000
@@ -144,12 +144,12 @@ Skin 2 cost    : 600
 Skin 3 cost    : 900
 STR dampen     : 0.050
 
-No rider attak : FALSE
-Can be dazed   : TRUE
-Can be grogged : TRUE
+No rider attak : False
+Can be dazed   : True
+Can be grogged : True
 NOT USED       : 0
 NOT USED       : 0
-Can see invisi : TRUE
+Can see invisi : True
 Kursed chance  : 0
 Footfall sound : 0
 Jump sound     : 1

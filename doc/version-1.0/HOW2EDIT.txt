@@ -130,7 +130,7 @@ but here are some tips:
         I think the potions use this...
      6> "Time Before End" becomes "Animation
         Cycles Before End" when "End After
-        Last Frame" is TRUE.  Makes sense,
+        Last Frame" is True.  Makes sense,
         huh?
      7> If several dynamic light particles
         are spawned by some other particle,

@@ -4,16 +4,16 @@
 //   This file also gives information regarding damage tiles and
 // friction for the module.
 
-Random map ( TRUE or FALSE ) ( doesn't work )       : #%
+Random map ( True or False ) ( doesn't work )       : #%
 Number of Water Layers ( 1=Fast, 2=Good )           : #%
 Water specular start ( 0-255 )                      : #%
 Water specular level ( 0-255 )                      : #%
 Water douse level ( For torches, 90 )               : #%
 Water surface level ( For water striders, 55 )      : #%
-Water light ( TRUE or FALSE )                       : #%
-Water is really water? ( TRUE or FALSE )            : #%
-Use watertop.bmp as an overlay? ( TRUE or FALSE )   : #%
-Use waterlow.bmp as a background? ( TRUE or FALSE ) : #%
+Water light ( True or False )                       : #%
+Water is really water? ( True or False )            : #%
+Use watertop.bmp as an overlay? ( True or False )   : #%
+Use waterlow.bmp as a background? ( True or False ) : #%
 Foreground distance effect X ( 0.0 to 1.0 )         : #%
 Foreground distance effect Y ( 0.0 to 1.0 )         : #%
 Background distance effect X ( 0.0 to 1.0 )         : #%
@@ -56,11 +56,11 @@ Damage tile damage ( 0 to 65535, 512 is 1 life block ) : #%
 Damage tile damage type ( SLASH, CRUSH, POKE, HOLY
                           EVIL, FIRE, ICE, ZAP )       : #%
 
-Weather particles only over water ( TRUE or FALSE )    : #%
+Weather particles only over water ( True or False )    : #%
 Weather particle spawn rate ( 0 to 100, 0 is none )    : #%
 
-Explore mode ( TRUE or FALSE )                         : #%
-Far Edge mode...  For outside levels ( TRUE or FALSE ) : #%
+Explore mode ( True or False )                         : #%
+Far Edge mode...  For outside levels ( True or False ) : #%
 Camera swing rate ( 0 to 100 )                         : #%
 Camera swing amplitude ( 0, or .002 to .100 )          : #%
 

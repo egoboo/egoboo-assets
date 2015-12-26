@@ -7,16 +7,16 @@ $FILE_VERSION 2         //This lets egoboo know that this is a new type of wawal
 // friction for the module.
 
 
-Random map ( TRUE or FALSE ) ( doesn't work )           : FALSE
+Random map ( True or False ) ( doesn't work )           : False
 Number of Water Layers ( 1=Fast, 2=Good )		: 2
 Water specular start ( 0-255 )				: 128
 Water specular level ( 0-255 )				: 128
 Water douse level ( For torches, 90 )			: 45
 Water surface level ( For water striders, 55 )		: 25
-Water light ( TRUE or FALSE )				: TRUE
-Water is really water? ( TRUE or FALSE )		: TRUE
-Use watertop.bmp as an overlay? ( TRUE or FALSE )       : FALSE
-Use waterlow.bmp as a background? ( TRUE or FALSE )	: FALSE
+Water light ( True or False )				: True
+Water is really water? ( True or False )		: True
+Use watertop.bmp as an overlay? ( True or False )       : False
+Use waterlow.bmp as a background? ( True or False )	: False
 Foreground distance effect X ( 0.0 to 1.0 )		: 0.0000
 Foreground distance effect Y ( 0.0 to 1.0 )		: 0.0000
 Background distance effect X ( 0.0 to 1.0 )		: 0.0000
@@ -60,11 +60,11 @@ Damage tile damage type ( SLASH, CRUSH, POKE, HOLY
                           EVIL, FIRE, ICE, ZAP )	:  FIRE
 
 Weather particle effect ( NONE, RAIN, LAVA or SNOW )  : NONE
-Weather particles only over water ( TRUE or FALSE )	: FALSE
+Weather particles only over water ( True or False )	: False
 Weather particle spawn rate ( 0 to 100, 0 is none )	: 0
 
-Explore mode ( TRUE or FALSE )				: FALSE
-Far Edge mode...  For outside levels ( TRUE or FALSE )	: FALSE
+Explore mode ( True or False )				: False
+Far Edge mode...  For outside levels ( True or False )	: False
 Camera swing rate ( 0 to 100 )				: 0
 Camera swing amplitude ( 0, or .002 to .100 )		: 0
 
@@ -75,4 +75,4 @@ Fog bottom z ( 0 )                                      : 0
 Fog Red ( 0.0 to 1.0 )                                  : 0.0
 Fog Green ( 0.0 to 1.0 )                                : 0.055
 Fog Blue ( 0.0 to 1.0 )                                 : 0.110
-Fog affects water ( TRUE or FALSE )                     : FALSE
+Fog affects water ( True or False )                     : False

@@ -1,6 +1,6 @@
 Slot number    : 70
 Class name     : Crab
-Uniform light  : FALSE
+Uniform light  : False
 Maximum ammo   : 0
 Current ammo   : 0
 Gender         : OTHER
@@ -40,14 +40,14 @@ Fly to height  : 0
 Flashing AND   : 255
 Alpha blending : 255
 Light blending : 255
-Transfer blend : FALSE
+Transfer blend : False
 Sheen          : 0
-Phong mapping  : FALSE
+Phong mapping  : False
 Texture X add  : 0.00
 Texture Y add  : 0.00
-Sticky butt    : TRUE
+Sticky butt    : True
 
-Invictus       : FALSE
+Invictus       : False
 NonI facing    : 0
 NonI angle     : 0
 I facing       : 0
@@ -98,16 +98,16 @@ IDSZ Hate      : [NONE]
 IDSZ Vulnie    : [NONE]
 
 //General flags
-Is an item     : TRUE
-Is a mount     : FALSE
-Is stackable   : FALSE
-Name known     : FALSE
-Usage known    : TRUE
-Is exportable  : TRUE
-Requires skill : TRUE
-Is platform    : FALSE
-Collects money : FALSE
-Can open stuff : FALSE
+Is an item     : True
+Is a mount     : False
+Is stackable   : False
+Name known     : False
+Usage known    : True
+Is exportable  : True
+Requires skill : True
+Is platform    : False
+Collects money : False
+Can open stuff : False
 
 //Attack animation and damage type
 Damage type    : POKE
@@ -119,11 +119,11 @@ Reaffirm type  : NONE
 Particle type  : 0
 
 //Grips
-Left valid     : FALSE
-Right valid    : FALSE
+Left valid     : False
+Right valid    : False
 
 //Weapon particle spawning
-Part on weapon : TRUE
+Part on weapon : True
 Part type      : 0
 
 //Poof particle spawning
@@ -132,10 +132,10 @@ Facing add     : 8192
 Part type      : 1
 
 //Blud?
-Blud valid    : TRUE
+Blud valid    : True
 Part type      : 7
 
-Waterwalking   : FALSE
+Waterwalking   : False
 Bounce dampen  : 0.600
 
 Life healing   : 0.000
@@ -152,12 +152,12 @@ Skin 2 cost    : 100
 Skin 3 cost    : 100
 STR dampen     : 0.050
 
-No rider attak : FALSE
-Can be dazed   : TRUE
-Can be grogged : FALSE
+No rider attak : False
+Can be dazed   : True
+Can be grogged : False
 NOT USED       : 0
 NOT USED       : 0
-Can see invisi : FALSE
+Can see invisi : False
 Kursed chance  : 0
 Footfall sound : -1
 Jump sound     : -1

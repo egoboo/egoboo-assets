@@ -3,11 +3,11 @@ Module Name 			:Catacombs_Level_2
 Reference Directory 			:catacomb1.mod
 Required reference IDSZ 		:[MAIN] 5
 Number of imports ( 0 to 4 ) 		:4
-Exporting ( TRUE or FALSE ) 		:FALSE
+Exporting ( True or False ) 		:False
 Minimum players ( 1 to 4 ) 		:1
 Maximum players ( 1 to 4 ) 		:4
-Respawning ( ANYTIME, TRUE or FALSE ) 	:TRUE
-Is a RTS module (TRUE or FALSE)			      : FALSE
+Respawning ( ANYTIME, True or False ) 	:True
+Is a RTS module (True or False)			      : False
 Level rating ( * to  ***** ) 		:******
 
 // Module summary ( Must be 8 lines...  Each line mush have at least an _ )

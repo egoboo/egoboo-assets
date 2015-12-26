@@ -1,6 +1,6 @@
 Object slot number ( 0 to 63, don't use twice )	: 50
 Class name     : Butcher
-Uniform light  : FALSE
+Uniform light  : False
 Maximum ammo   : 0
 Current ammo   : 0
 Gender         : OTHER
@@ -40,14 +40,14 @@ Fly to height  : 0
 Flashing AND   : 255
 Alpha blending : 255
 Light blending : 255
-Transfer blend : TRUE
+Transfer blend : True
 Sheen          : 0
-Phong mapping  : FALSE
+Phong mapping  : False
 Texture X add  : 0.00
 Texture Y add  : 0.00
-Sticky butt    : FALSE
+Sticky butt    : False
 
-Invictus       : FALSE
+Invictus       : False
 NonI facing    : 0
 NonI angle     : 0
 I facing       : 0
@@ -96,16 +96,16 @@ IDSZ Special   : [EVIL]
 IDSZ Hate      : [XNOS]
 IDSZ Vulnie    : [HOLY]
 
-Is an item     : FALSE
-Is a mount     : FALSE
-Is stackable   : FALSE
-Name known     : FALSE
-Usage known    : TRUE
-Is exportable  : TRUE
-Requires skill : FALSE
-Is platform    : FALSE
-Collects money : TRUE
-Can open stuff : FALSE
+Is an item     : False
+Is a mount     : False
+Is stackable   : False
+Name known     : False
+Usage known    : True
+Is exportable  : True
+Requires skill : False
+Is platform    : False
+Collects money : True
+Can open stuff : False
 
 Damage type    : CRUSH
 Attack type    : WALK
@@ -114,20 +114,20 @@ Attached parts : 0
 Reaffirm type  : NONE
 Particle type  : 0
 
-Left valid     : FALSE		//Dont use left hand
-Right valid    : TRUE
+Left valid     : False		//Dont use left hand
+Right valid    : True
 
-Part on weapon : TRUE
+Part on weapon : True
 Part type      : 0
 
 Poof amount    : 0
 Facing add     : 0
 Part type      : 0
 
-Blud valid    : TRUE
+Blud valid    : True
 Part type      : 1
 
-Waterwalking   : FALSE
+Waterwalking   : False
 Bounce dampen  : 0.600
 
 Life healing   : 0.000
@@ -144,12 +144,12 @@ Skin 2 cost    : 0
 Skin 3 cost    : 0
 STR dampen     : 0.050
 
-No rider attak : FALSE
-Can be dazed   : FALSE
-Can be grogged : FALSE
+No rider attak : False
+Can be dazed   : False
+Can be grogged : False
 NOT USED       : 0
 NOT USED       : 0
-Can see invisi : FALSE
+Can see invisi : False
 Kursed chance  : 0
 Footfall sound : -1
 Jump sound     : -1

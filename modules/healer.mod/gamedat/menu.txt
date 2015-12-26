@@ -3,11 +3,11 @@ Name ( with underscores for spaces )		: Healer_Start
 Reference module ( Directory name or NONE )	: NONE
 Required reference IDSZ ( or [NONE] )		: [NONE]
 Number of imports ( 0 to 4 )			: 0
-Allow exporting of characters ( TRUE or FALSE )	: FALSE
+Allow exporting of characters ( True or False )	: False
 Minimum number of players ( 1 to 4 )		: 1
 Maximum number of players ( 1 to 4 )		: 1
-Allow respawning (ANYTIME, TRUE or FALSE )	: TRUE
-NOT USED				: FALSE
+Allow respawning (ANYTIME, True or False )	: True
+NOT USED				: False
 Level rating ( *, **, ***, ****, or ***** )     		: ***
 
 

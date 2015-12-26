@@ -1,5 +1,5 @@
 // Generic damage particle for weapon attacks
-Force spawn ( TRUE or FALSE )                       : #%
+Force spawn ( True or False )                       : #%
 Image type ( SOLID, LIGHT, or TRANS )               : #%
 Starting frame ( 0 to 255 )                         : #%
 Number of frames ( 1 to 16 )                        : #%
@@ -16,10 +16,10 @@ Facing rate ( 0 to 1000 )                           : #%
 
 
 // Ending conditions
-Water ends particle ( TRUE or FALSE )  : #%
-Bump ends particle ( TRUE or FALSE )   : #%
-End if hits ground ( TRUE or FALSE )   : #%
-End after last frame ( TRUE or FALSE ) : #%
+Water ends particle ( True or False )  : #%
+Bump ends particle ( True or False )   : #%
+End if hits ground ( True or False )   : #%
+End after last frame ( True or False ) : #%
 Time before end ( 1 to 1000, 0 )       : #%
 
 
@@ -37,7 +37,7 @@ Bump damage type ( SLASH, CRUSH, POKE, HOLY,
 
 
 // Lighting data
-Does it act as a dynamic light? ( TRUE or FALSE ) : #%
+Does it act as a dynamic light? ( True or False ) : #%
 Dynalight level ( around 0.7 )                    : #%
 Dynalight falloff ( around 1000 )                 : #%
 
@@ -80,24 +80,24 @@ Spawn type ( 0 to 3 )               : #%
 // Random stuff
 Daze time on hit ( 0 to 250 )              : #%
 Grog time on hit ( 0 to 250 )              : #%
-Spawn enchant on hit ( TRUE or FALSE )     : #%
-Cause roll on hit ( TRUE or FALSE )        : #%
-Cause pancake on hit ( TRUE or FALSE )     : #%
-Need target to spawn ( TRUE or FALSE )     : #%
-Target is caster ( TRUE or FALSE )         : #%
-Start on target ( TRUE or FALSE )          : #%
-Only damage friendly ( TRUE or FALSE )     : #%
+Spawn enchant on hit ( True or False )     : #%
+Cause roll on hit ( True or False )        : #%
+Cause pancake on hit ( True or False )     : #%
+Need target to spawn ( True or False )     : #%
+Target is caster ( True or False )         : #%
+Start on target ( True or False )          : #%
+Only damage friendly ( True or False )     : #%
 Spawn sound ( -1 for none )                : #%
 End sound ( -1 for none )                  : #%
-Friendly fire ( TRUE or FALSE )            : #%
-Only hit hate group ( TRUE or FALSE )      : #%
-New target on spawn ( TRUE or FALSE )      : #%
+Friendly fire ( True or False )            : #%
+Only hit hate group ( True or False )      : #%
+New target on spawn ( True or False )      : #%
 Target angle ( 0 to 32768 )                : #%
-Home in on target ( TRUE or FALSE )        : #%
+Home in on target ( True or False )        : #%
 Homing friction ( 0.0 to 1.0 )             : #%
 Homing acceleration ( 0.0 to 1.0 )         : #%
-Rotate to face direction ( TRUE or FALSE ) : #%
-Respawn character on hit ( TRUE or FALSE ) : #%
+Rotate to face direction ( True or False ) : #%
+Respawn character on hit ( True or False ) : #%
 Mana drain on hit ( 0 to 50 )              : #%
 Life drain on hit ( 0 to 50 )              : #%
 

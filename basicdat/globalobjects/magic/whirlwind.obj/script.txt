@@ -26,6 +26,11 @@ IfSpawned
     tmpargument = 50
     SetTime
 
+    //Spawn the gravity pull particle
+    tmpargument = 0
+    tmpdistance = 0
+    SpawnAttachedParticle
+
 // It's a spell in hand
 IfChanged
   tmpargument = 0

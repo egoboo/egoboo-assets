@@ -13,7 +13,7 @@ IfTimeOut
     IfTargetIsAPlayer
       tmpdistance = 1
       tmpargument = [GNOM]
-      IfTargetHasID
+      IfTargetHasSkillID
         tmpx = 2 // Message
 
       // Check for truesight as well
@@ -26,7 +26,7 @@ IfTimeOut
     IfTargetIsAPlayer
       tmpdistance = 1
       tmpargument = [GNOM]
-      IfTargetHasID
+      IfTargetHasSkillID
         tmpx = 3 // Message
 
       // Check for truesight as well
@@ -39,7 +39,7 @@ IfTimeOut
     IfTargetIsAPlayer
       tmpdistance = 1
       tmpargument = [GNOM]
-      IfTargetHasID
+      IfTargetHasSkillID
         tmpx = 4 // Message
 
       // Check for truesight as well
@@ -52,7 +52,7 @@ IfTimeOut
     IfTargetIsAPlayer
       tmpdistance = 1
       tmpargument = [GNOM]
-      IfTargetHasID
+      IfTargetHasSkillID
         tmpx = 5 // Message
 
       // Check for truesight as well

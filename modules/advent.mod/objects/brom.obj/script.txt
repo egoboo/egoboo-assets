@@ -90,6 +90,16 @@ IfTimeOut                // This is done every so often
       tmpturn = 16384 + leaderturn        // Stand to side
       Compass
       FindPath
+        DoNothing
+      Else
+        //Cannot find path to leader, keep position if we are close enough
+        tmpx = leaderdistance
+        tmpy = 128*4
+        IfXIsLessThanY
+          tmpx = selfx
+          tmpy = selfy
+          ClearWaypoints
+          AddWaypoint
 
       // Look out for enemies
       tmpx = leaderdistance
@@ -190,16 +200,19 @@ IfBumped                // Bumped
       tmpargument = LATCHRIGHT
       PressLatchButton
     Else
-
-      // Get around other character
-      tmpargument = STATECOMBAT
-      IfStateIsNot
-        tmpx = rand & 511 + selfx - 256
-        tmpy = rand & 511 + selfy - 256
-        ClearWaypoints
-        AddWaypoint
-        tmpargument = 40                // Try again soon
-        SetTime
+      IfTargetIsAPlayer
+        // Get around other character
+        tmpargument = STATECOMBAT
+        IfStateIsNot
+          tmpx = targetx
+          tmpy = targety
+          tmpdistance = 256
+          tmpturn = targetturn
+          Compass
+          ClearWaypoints
+          AddWaypoint
+          tmpargument = 40                // Try again soon
+          SetTime
 
   // Jump over bodies
   Else

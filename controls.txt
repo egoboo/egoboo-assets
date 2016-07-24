@@ -1,4 +1,4 @@
-$FILE_VERSION 2
+$FILE_VERSION 4
 
 Controls
 ========
@@ -13,68 +13,81 @@ These are general control codes and cannot be changed
 ESC                       - Open ingame menu
 SPACE                     - Respawn character (if dead and possible)
 1 to 7                    - Show character detailed stats
-LEFT SHIFT   + 1 to 8     - Show selected character armor without magic enchants
-LEFT CONTROL + 1 to 8     - Show armor stats with magic enchants included
-LEFT ALT     + 1 to 8     - Show character magic enchants
 F11                       - Take screenshot
 
 
 PLAYER 1
 ========
-CONTROLLER:         KEYBOARD
-Jump                  : KEY_SPACE
-Left Hand Use         : KEY_T
-Left Hand Get/Drop    : KEY_G
-Left Hand Inventory   : KEY_B
-Right Hand Use        : KEY_Y
-Right Hand Get/Drop   : KEY_H
-Right Hand Inventory  : KEY_N
-Sneak                 : KEY_LEFT_SHIFT
-Send Message : KEY_M
-Camera Rotate Left   : KEY_5
-Camera Rotate Right  : KEY_6
-Camera Zoom In       : KEY_EQUALS
-Camera Zoom Out      : KEY_MINUS
-Up                   : KEY_UP
-Down                 : KEY_DOWN
-Left                 : KEY_LEFT
-Right                : KEY_RIGHT
+Move Up		: Up
+Move Right		: Right
+Move Down		: Down
+Move Left		: Left
+Jump		: Space
+Use Left		: T
+Grab Left		: G
+Use Right		: Y
+Grab Right		: H
+Inventory		: B
+Stealth		: Left Shift
+CAMERA_LEFT		: SDLK_UNKNOWN
+CAMERA_RIGHT		: SDLK_UNKNOWN
+CAMERA_ZOOM_IN		: SDLK_UNKNOWN
+CAMERA_ZOOM_OUT		: Keypad +
+Camera Control		: SDLK_UNKNOWN
 
 PLAYER 2
 ========
-CONTROLLER:         MOUSE
-Jump                  : MOS_MIDDLE
-Left Hand Use         : MOS_LEFT
-Left Hand Get/Drop    : MOS_RIGHT + MOS_MIDDLE
-Left Hand Inventory   : KEY_DELETE
-Right Hand Use        : MOS_RIGHT
-Right Hand Get/Drop   : MOS_LEFT + MOS_MIDDLE
-Right Hand Inventory  : KEY_INSERT
-Sneak                 : MOS_FOURTH
-Camera Control Mode	  : MOS_LEFT + MOS_RIGHT
+Move Up		: SDLK_UNKNOWN
+Move Right		: SDLK_UNKNOWN
+Move Down		: SDLK_UNKNOWN
+Move Left		: SDLK_UNKNOWN
+Jump		: SDLK_UNKNOWN
+Use Left		: SDLK_UNKNOWN
+Grab Left		: SDLK_UNKNOWN
+Use Right		: SDLK_UNKNOWN
+Grab Right		: SDLK_UNKNOWN
+Inventory		: SDLK_UNKNOWN
+Stealth		: SDLK_UNKNOWN
+CAMERA_LEFT		: SDLK_UNKNOWN
+CAMERA_RIGHT		: SDLK_UNKNOWN
+CAMERA_ZOOM_IN		: SDLK_UNKNOWN
+CAMERA_ZOOM_OUT		: SDLK_UNKNOWN
+Camera Control		: SDLK_UNKNOWN
 
 PLAYER 3
 ========
-CONTROLLER:         JOYSTICK_A
-Jump                  : JOY_1
-Left Hand Use         : JOY_4
-Left Hand Get/Drop    : JOY_6
-Left Hand Inventory   : JOY_7
-Right Hand Use        : JOY_0
-Right Hand Get/Drop   : JOY_2
-Right Hand Inventory  : JOY_5
-Sneak                 : JOY_0 + JOY_1
-Camera Control Mode	  : JOY_3
+Move Up		: SDLK_UNKNOWN
+Move Right		: SDLK_UNKNOWN
+Move Down		: SDLK_UNKNOWN
+Move Left		: SDLK_UNKNOWN
+Jump		: SDLK_UNKNOWN
+Use Left		: SDLK_UNKNOWN
+Grab Left		: SDLK_UNKNOWN
+Use Right		: SDLK_UNKNOWN
+Grab Right		: SDLK_UNKNOWN
+Inventory		: SDLK_UNKNOWN
+Stealth		: SDLK_UNKNOWN
+CAMERA_LEFT		: SDLK_UNKNOWN
+CAMERA_RIGHT		: SDLK_UNKNOWN
+CAMERA_ZOOM_IN		: SDLK_UNKNOWN
+CAMERA_ZOOM_OUT		: SDLK_UNKNOWN
+Camera Control		: SDLK_UNKNOWN
 
 PLAYER 4
 ========
-CONTROLLER:         JOYSTICK_B
-Jump                  : JOY_1
-Left Hand Use         : JOY_4
-Left Hand Get/Drop    : JOY_6
-Left Hand Inventory   : JOY_7
-Right Hand Use        : JOY_0
-Right Hand Get/Drop   : JOY_2
-Right Hand Inventory  : JOY_5
-Sneak                 : JOY_0 + JOY_1
-Camera Control Mode	  : JOY_3
+Move Up		: SDLK_UNKNOWN
+Move Right		: SDLK_UNKNOWN
+Move Down		: SDLK_UNKNOWN
+Move Left		: SDLK_UNKNOWN
+Jump		: SDLK_UNKNOWN
+Use Left		: SDLK_UNKNOWN
+Grab Left		: SDLK_UNKNOWN
+Use Right		: SDLK_UNKNOWN
+Grab Right		: SDLK_UNKNOWN
+Inventory		: SDLK_UNKNOWN
+Stealth		: SDLK_UNKNOWN
+CAMERA_LEFT		: SDLK_UNKNOWN
+CAMERA_RIGHT		: SDLK_UNKNOWN
+CAMERA_ZOOM_IN		: SDLK_UNKNOWN
+CAMERA_ZOOM_OUT		: SDLK_UNKNOWN
+Camera Control		: SDLK_UNKNOWN

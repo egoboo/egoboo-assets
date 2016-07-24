@@ -74,6 +74,16 @@ IfTimeOut                // This is done every so often
       tmpturn = 49152 + leaderturn        // Stand to side
       Compass
       FindPath
+        DoNothing
+      Else
+        //Cannot find path to leader, keep position if we are close enough
+        tmpx = leaderdistance
+        tmpy = 128*4
+        IfXIsLessThanY
+          tmpx = selfx
+          tmpy = selfy
+          ClearWaypoints
+          AddWaypoint
 
       // Find someone to bash
       tmpx = leaderdistance
@@ -228,13 +238,17 @@ IfBumped
       Else
         tmpargument = STATECOMBAT
         IfStateIsNot
-          // Move out of the way
-          tmpx = rand & 511 + selfx - 256
-          tmpy = rand & 511 + selfy - 256
-          ClearWaypoints
-          AddWaypoint
-          tmpargument = 40              // Try again soon
-          SetTime
+          IfTargetIsAPlayer
+            // Move out of the way
+            tmpx = targetx
+            tmpy = targety
+            tmpdistance = 256
+            tmpturn = targetturn
+            Compass
+            ClearWaypoints
+            AddWaypoint
+            tmpargument = 40              // Try again soon
+            SetTime
 
     // Bash 'em
     IfTargetIsOnHatedTeam

@@ -41,7 +41,7 @@ IfKilled
 IfSpawned
   tmpargument = [BOOK]
   IfHoldingItemID
-    tmpargument = LATCHLEFT
+    tmpargument = LATCHLEFT //Spawn faerie light
     PressLatchButton
 
 IfTimeOut
@@ -60,27 +60,29 @@ IfTimeOut
         IfXIsEqualToY       // Its moving! Attack!
           tmpargument = 1
           SetState
-        Else                // We know nothin..
-          tmpx = leaderx
-          tmpy = leadery
-          FindPath
       Else                  // It's not a mimic - Charge!
         tmpargument = 1
         SetState
-    Else
-      tmpx = leaderdistance
-      tmpy = 375
-      IfXIsLessThanY
-        tmpx = rand & 511 + selfx - 256
-        tmpy = rand & 511 + selfy - 256
-      Else
-        tmpx = leaderx
-        tmpy = leadery
-        tmpdistance = 1500
-        SetTargetToLeader
-        tmpturn = targetturnto
-        Compass
+  
+    //Still no enemy detected?
+    IfStateIs0
+      //Follow leader
+      tmpx = leaderx
+      tmpy = leadery
+      tmpdistance = 128
+      tmpturn = 49152 + leaderturn        // Stand to side
+      Compass
       FindPath
+        DoNothing
+      Else
+        //Cannot find path to leader, keep position if we are close enough
+        tmpx = leaderdistance
+        tmpy = 128*3
+        IfXIsLessThanY
+          tmpx = selfx
+          tmpy = selfy
+          ClearWaypoints
+          AddWaypoint
 
   // Combat
   IfStateIs1
@@ -215,5 +217,28 @@ IfStateIs2
     SetContent
     tmpargument = 1
     SetState
+
+//------------------------------------------------------------------------------
+IfBumped
+  SetTargetToWhoeverBumped
+  IfTargetIsAlive
+
+    IfStateIs0
+      IfTargetIsAPlayer
+        // Move out of the way
+        tmpx = targetx
+        tmpy = targety
+        tmpdistance = 256
+        tmpturn = targetturn
+        Compass
+        ClearWaypoints
+        AddWaypoint
+        tmpargument = 40              // Try again soon
+        SetTime
+
+  // Jump over bodies
+  Else
+    tmpargument = LATCHJUMP
+    PressLatchButton
 
 End

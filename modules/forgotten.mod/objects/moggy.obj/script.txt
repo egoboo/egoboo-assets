@@ -51,6 +51,36 @@ IfTargetIsOnHatedTeam
         IfHoldingItemID
           PressLatchButton
 
+//------------------------------------------------------------------------------
+IfBumped
+  SetTargetToWhoeverBumped
+  IfTargetIsAlive
+
+    IfStateIs0
+      IfTargetIsAPlayer
+        // Move out of the way
+        tmpx = targetx
+        tmpy = targety
+        tmpdistance = 256
+        tmpturn = targetturn
+        Compass
+        ClearWaypoints
+        AddWaypoint
+        tmpargument = 40              // Try again soon
+        SetTime
+
+    // Bash 'em
+    IfTargetIsOnHatedTeam
+      IfFacingTarget
+        IfHoldingMeleeWeapon
+          PressLatchButton
+
+  // Jump over bodies
+  Else
+    tmpargument = LATCHJUMP
+    PressLatchButton
+
+//------------------------------------------------------------------------------
 // Main AI loop
 IfTimeOut
   tmpargument = rand & 31 + 15
@@ -76,14 +106,12 @@ IfTimeOut
         IfXIsEqualToY       // Its moving! Attack!
           tmpargument = 1
           SetState
-        Else                // We know nothin..
-          tmpx = leaderx
-          tmpy = leadery
-          FindPath
       Else                  // It's not a mimic - Charge!
         tmpargument = 1
         SetState
-    Else
+
+    //Are we still not following a mimic?
+    IfStateIs0
       tmpx = leaderdistance
       tmpy = 375
       IfXIsLessThanY
@@ -93,11 +121,10 @@ IfTimeOut
         tmpx = targetlife
         tmpy = 1024            // Only 4 hp left or less
         IfXIsLessThanY
-          GetContent            // Content = number of potions
-          tmpx = tmpargument
+          tmpx = selfcontent   // Content = number of potions
           tmpy = 0
           IfXIsMoreThanY
-            tmpargument = tmpargument -1
+            tmpargument = selfcontent -1
             SetContent                      // Drink one
             tmpdistance = SPAWNORIGIN
             tmpargument = 2
@@ -106,30 +133,41 @@ IfTimeOut
             HealTarget                     // Healing!
             tmpargument = 3
             SendMessageNear
-        tmpx = rand & 511 + selfx - 256
-        tmpy = rand & 511 + selfy - 256
-      Else
-        tmpx = leaderx
-        tmpy = leadery
-        tmpdistance = 1500
-        SetTargetToLeader
-        tmpturn = targetturnto
-        Compass
+
+      //Follow leader
+      tmpx = leaderx
+      tmpy = leadery
+      tmpdistance = 128
+      tmpturn = 16384 + leaderturn        // Stand to side
+      Compass
       FindPath
+        DoNothing
+      Else
+        //Cannot find path to leader, keep position if we are close enough
+        tmpx = leaderdistance
+        tmpy = 128*3
+        IfXIsLessThanY
+          tmpx = selfx
+          tmpy = selfy
+          ClearWaypoints
+          AddWaypoint
 
   // Combat
   IfStateIs1
     SetTargetToNearbyEnemy      // Don't blindly follow our boss while we are under attack
       tmpx = 0
+      SetTurnModeToWatchTarget
     Else
       tmpx = leaderdistance
+      SetTurnModeToVelocity
     tmpy = 800
     IfXIsLessThanY                // Follow boss if he is far away
       SetTargetToWideEnemy
         tmpx = targetx
         tmpy = targety
-        tmpdistance = 1500
         tmpturn = targetturnto
+        tmpdistance = 100
+        Compass
         FindPath
       Else
         tmpargument = 0

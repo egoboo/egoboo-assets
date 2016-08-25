@@ -3,6 +3,9 @@ tmpy = selfy
 tmpargument = WHITE
 ShowBlipXY
 
+IfSpawned
+  AddStat
+
 // Ressurected?
 IfUnarmed
   tmpargument = 2

@@ -31,8 +31,8 @@ Inventory		: B
 Stealth		: Left Shift
 CAMERA_LEFT		: SDLK_UNKNOWN
 CAMERA_RIGHT		: SDLK_UNKNOWN
-CAMERA_ZOOM_IN		: SDLK_UNKNOWN
-CAMERA_ZOOM_OUT		: Keypad +
+CAMERA_ZOOM_IN		: Keypad +
+CAMERA_ZOOM_OUT		: Keypad -
 Camera Control		: SDLK_UNKNOWN
 
 PLAYER 2

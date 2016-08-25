@@ -175,7 +175,7 @@ Else
           tmpargument = 2
           PlaySound
       IfStateIs4                    // 5 - Lose 1 random stat
-        tmpargument = rand % 6
+        tmpargument = rand % 5
         SetState
         tmpargument = 0 - 256
         IfStateIs0
@@ -191,9 +191,6 @@ Else
           GiveStrengthToTarget
           tmpargument = 9
         IfStateIs4
-          GiveWisdomToTarget
-          tmpargument = 10
-        IfStateIs5
           GiveIntelligenceToTarget
           tmpargument = 11
         SendMessage

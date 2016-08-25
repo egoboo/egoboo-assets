@@ -5,7 +5,7 @@ IfSpawned
   // Become invisible
   IfStateIs1
     tmpargument = 0
-    SetLight
+    SetAlpha
     SetState
 
 // Turn switch when bumped

@@ -91,7 +91,7 @@ IfUsed
       EnchantTarget
       tmpx = targetx
       tmpy = targety
-      tmpdistance = 0.5
+      tmpdistance = 128
       tmpargument = 5
       SpawnExactParticle
       MakeUsageKnown
@@ -106,7 +106,7 @@ IfUsed
       FlashTarget
       tmpx = targetx
       tmpy = targety
-      tmpdistance = 0.5
+      tmpdistance = 128
       tmpargument = 5
       SpawnExactParticle
       MakeUsageKnown
